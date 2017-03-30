@@ -1,0 +1,105 @@
+/*
+ * Start Bootstrap - Full (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/*
+	NOTE:
+	MAIN COLOR THEME FOR THIS SITE
+	WHITE #eee
+	GRAY 
+	ORANGE color: rgba(255,153,0,1.0);
+*/
+
+body {
+  /*  margin-top: 50px; *//* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: white; /*aka rgb(71,71,71)*/
+   	color: rgba(76,50,87,1.0);	
+    padding: 35px;
+    width: 100%;
+	padding: 0;
+    /*display: flex;*/
+}
+
+.btn-success {
+	background-color: rgba(255,153,0,0.5);
+	border: 1px solid rgba(255,153,0,1.0);
+	border-radius: 0px;
+	font-size: 14px;
+}
+.btn-success:hover {
+	background-color: rgba(255,153,0,0.7);
+	border: 1px solid rgba(255,153,0,1.0);	
+}
+
+#center-main-section {
+	display: hidden;
+	text-align: center;
+	padding: 25px 25px 40px 25px;
+}/*default for all screen sizes*/
+.center-of-page {
+	position: fixed;
+	margin: 0 auto;
+}
+h2 {
+	text-align: center;
+	color: rgba(255,153,0,1.0);
+}
+main {
+	width: 100%;
+}
+main section {
+	width: 100%;
+}
+/*below is styling for backgrounds of each section since sass isn't installed yet*/
+main #center-main-section {
+	padding: 50px;
+	color: rgba(76,50,87,1.0); /*nirmal font color on lighter backgrounds*/
+}/*summary area*/
+main #center-main-section h1 {
+	color: rgba(46,6,40,1.0);
+}
+main section {
+	padding: 50px;
+}
+main section:nth-child(2n) {
+	/*background-color: rgba(130,130,130,10);*/
+	background-color: rgba(63,67,64,1.0);
+	color: #eee;
+}
+
+@media only screen and (min-width: 768px) {
+	main section {
+		float: left;
+		min-height: 500px;
+	}/* handles grid layout of sections */
+} /*end media query for larger than xs devices*/
+
+/* COLOR CLASSES OF THIS SITE */
+
+.orange {
+	color: rgba(255,153,0,1.0) !important;
+}
+.gray {
+
+}
+.moderate-white {
+
+}
+.portfolio-item {
+	padding: 40px;
+	border: 1px solid white;
+}
+.portfolio-item:hover {
+	/*background: #ddd;*/
+	border: 1px solid rgba(255,153,0,1.0);
+	transform: ease-in 0.2s;
+}
+.pure-white {
+	color: white !important;
+}
+
+
+
+

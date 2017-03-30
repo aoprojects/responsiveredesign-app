@@ -1,0 +1,190 @@
+/*note: bootstrap breakpoints are as follows
+
+xs and mobile
+tiniest to 767px
+
+small and tablet
+768px - 991px
+
+medium and desktop
+992px - 1199px
+
+large and desktop
+1200px and up
+
+*/
+
+
+a {
+	color: rgba(255,153,0,1.0);/*the site's theme pop color - orange*/
+}
+a:hover {
+	color: rgba(229,137,0,1.0); /* 1 darken of the site's theme pop color - orange*/
+	/*color: rgba(204,122,0,1.0);*/
+	/* 2 darken of the site's theme pop color - orange*/
+	text-decoration: none;
+}
+
+body {
+	font-family: Arial;
+}
+#brand {
+	position: relative;
+	top: 20;
+	left: 20;
+}
+
+h2, h3, h4 {
+	text-align: center;
+}
+
+li {
+	font-size: 16px;
+}
+
+
+
+/* GENERAL - DEFAULT PAGE STYLES */
+@media only screen and (max-width: 767px) {
+	main h1, h2 {
+		text-align: center;
+	}
+}
+
+.btn-default {
+	/*background-color: transparent;*/
+	color: black !important;
+	font-style: Helvetica;
+	border: 1px solid rgba(255,153,0,1.0);
+	margin: 20px;
+	border-radius: 2px;
+}
+.btn-default:hover {
+	transform: scale(1.1);
+	color: black;
+	transition: ease-in 0.1s;
+	/*border: 2px solid black;*/
+	border-radius: 0px;
+	background-color: transparent;
+	outline: none;
+	border: 1px solid rgba(229,137,0,1.0); /* 1 darken of the site's theme pop color - orange*/
+	/*font-weight: 600;*/
+}
+.btn-default:active, .btn-default:focus, .btn-default:target, .btn-default:visited {
+	background-color: transparent !important;
+	outline: none;
+	border: 1px solid rgba(255,153,0,1.0) !important;
+}
+
+
+/* ----------------
+	BEGIN STYLES FOR SPECIFIC PURPOSE GROUPS
+ ------------ */
+
+/* FOOTER */
+footer {
+	padding: 40px;
+	text-align: center;
+	font-size: 16px;
+}
+
+/* NAVIGATION */
+/*begin default styles for all NAVIGATION sizes*/
+nav {
+	position: relative;
+	background-color: rgba(63,67,64,1.0); /*dark gray*/
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: #jjj;
+	padding: 20px;
+}
+nav #brand {
+	color: #eee;
+	padding-left: 40px;
+	padding-top: 0px;
+	font-size: 25px;
+}
+nav #xs_hamburger {
+	color: #eee;
+	font-size: 25px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 21px;
+}
+nav #xs_hamburger:hover {
+	background-color: #525153;
+	cursor: pointer;
+	color: rgba(229,137,0,1.0);
+}
+/* click this to drop down nav on tablet and mobile sizes */
+nav ul {
+
+}
+nav ul li {
+	text-decoration: none;
+	list-style: none;
+	padding: 3px;
+	width: 100%;
+	color: #eee;
+	text-align: center;
+}
+nav ul li:hover {
+	color: rgba(229,137,0,1.0);
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+	/*background-color: black;*/
+}
+nav ul li a {
+	text-decoration: none;
+	color: #eee;
+}
+nav ul li a:hover {
+	text-decoration: none;
+	font-weight: bold;
+	color: rgba(229,137,0,1.0);
+}
+#xs_hamburger #hamburger_icon {
+
+}
+#xs_hamburger #menu_label {
+	display: block;
+	font-size: 13px;
+	color: white;
+}
+
+/* NAVIGATION styles for tablets and larger */
+
+@media only screen and (min-width: 992px) {
+
+
+}/* end media query for large screen sizes */
+/* Begin NAVIGATION styles for desktop and larger */
+@media only screen and (min-width: 992px) {
+	/*begin styling for navigation*/
+	nav ul {
+		position: fixed;
+		right: 0;
+		top:0;
+		width: 70vw;
+		/*top: 0;*/
+	}
+	nav ul li {
+		width: 15vw;
+		float: left;
+		display: inline;
+		position: relative;
+		padding: 15px;
+		height: 30px;
+		top: 5px;
+	}
+	#xs_hamburger {
+		display: none;
+	}
+	/*end styling for navigation*/
+}/*display for desktop screens only*/
+
+/* END NAVIGATION DEFAULT STYLES 
+
