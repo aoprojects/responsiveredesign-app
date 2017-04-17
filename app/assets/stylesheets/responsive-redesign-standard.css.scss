@@ -43,6 +43,11 @@ li {
 	font-size: 16px;
 }
 
+main {
+	position: relative;
+	top: 90px;
+}
+
 
 
 /* GENERAL - DEFAULT PAGE STYLES */
@@ -77,6 +82,30 @@ li {
 	border: 1px solid rgba(255,153,0,1.0) !important;
 }
 
+.social-icon-container i {
+	color: rgba(229,137,0,0.6);
+	font-size: 26px;
+}
+.social-icon-container i:hover {
+	color: rgba(229,137,0,1.0);
+}
+
+.un-button {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+.un-button:hover, :active, :focus {
+	color: rgba(229,137,0,1.0);
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+.white {
+	color: white !important;
+}
+
 
 /* ----------------
 	BEGIN STYLES FOR SPECIFIC PURPOSE GROUPS
@@ -84,7 +113,6 @@ li {
 
 /* FOOTER */
 footer {
-	// position: relative;
 	padding: 40px;
 	text-align: center;
 	font-size: 16px;
@@ -93,7 +121,7 @@ footer {
 /* NAVIGATION */
 /*begin default styles for all NAVIGATION sizes*/
 nav {
-	position: relative;
+	position: fixed;
 	background-color: rgba(63,67,64,1.0); /*dark gray*/
 	top: 0;
 	left: 0;
@@ -147,30 +175,6 @@ nav ul li a:hover {
 	text-decoration: none;
 	font-weight: bold;
 	color: rgba(229,137,0,1.0);
-}
-
-.social-icon-container i {
-	color: rgba(229,137,0,0.6);
-	font-size: 26px;
-}
-.social-icon-container i:hover {
-	color: rgba(229,137,0,1.0);
-}
-
-.un-button {
-	background: transparent;
-	border: none;
-	box-shadow: none;
-	outline: none;
-}
-.un-button:hover, :active, :focus {
-	color: rgba(229,137,0,1.0);
-	border: none;
-	box-shadow: none;
-	outline: none;
-}
-.white {
-	color: white !important;
 }
 
 #xs_hamburger #hamburger_icon {
