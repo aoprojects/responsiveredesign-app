@@ -49,11 +49,19 @@ main {
 }
 
 
-
 /* GENERAL - DEFAULT PAGE STYLES */
 @media only screen and (max-width: 767px) {
-	main h1, h2 {
-		text-align: center;
+	main {
+		h1, h2 {
+			text-align: center;
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	main {
+		position: relative;
+		top: 300px;
 	}
 }
 
