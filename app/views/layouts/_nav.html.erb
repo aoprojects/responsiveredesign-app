@@ -1,5 +1,5 @@
 <nav>
-    <h1 id="brand" class="orange">ResponsiveRedesign.io</h1>
+    <h1 id="brand" class="orange"><%= link_to "ResponsiveRedesign.io", root_path, class: "orange" %></h1>
     <div id="xs_hamburger">
         <div id="hamburger_icon">
             <%= image_tag("list-menu.png") %>
@@ -13,7 +13,7 @@
             <li><a href="#why-us">Why&nbsp;Us</a></li>
             <li alt="Cost"><a href="#pricing">Pricing</a></li>
 
-            <li alt="Portfolio"><a href="#portfolio">Examples</a></li>
+            <li alt="Portfolio"><!-- <a href="#portfolio">Examples</a> --></li>
             <li><a href="#testimonials">Testimonials</a></li>
             <li alt="Mailing List">Newsletter&nbsp;&amp;&nbsp;Social</li>
             <li alt="Take Action"><%= link_to 'Order a Design Now!', order_path, class: "btn btn-sm btn-success" %></li>
