@@ -148,6 +148,14 @@ nav ul li a:hover {
 	color: rgba(229,137,0,1.0);
 }
 
+.social-icon-container i {
+	color: rgba(229,137,0,0.6);
+	font-size: 26px;
+}
+.social-icon-container i:hover {
+	color: rgba(229,137,0,1.0);
+}
+
 .un-button {
 	background: transparent;
 	border: none;
