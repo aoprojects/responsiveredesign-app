@@ -120,7 +120,9 @@ nav {
 } /*end media query for larger than xs devices*/
 
 /* COLOR CLASSES OF THIS SITE */
-
+#nav_elements li a {
+	color: white !important;
+}
 .orange {
 	color: rgba(255,153,0,1.0) !important;
 }
