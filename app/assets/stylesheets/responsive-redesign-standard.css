@@ -22,8 +22,9 @@ a:hover {
 	color: rgba(229,137,0,1.0); /* 1 darken of the site's theme pop color - orange*/
 	/*color: rgba(204,122,0,1.0);*/
 	/* 2 darken of the site's theme pop color - orange*/
-	text-decoration: none;
-}
+	text-decoration: none !important;
+	color: rgba(255,153,0,1.0) !important;
+} 
 
 body {
 	font-family: Arial;
@@ -146,6 +147,16 @@ nav ul li a:hover {
 	font-weight: bold;
 	color: rgba(229,137,0,1.0);
 }
+
+.un-button {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+.un-button:hover {
+	color: rgba(229,137,0,1.0);
+}
+
 #xs_hamburger #hamburger_icon {
 
 }

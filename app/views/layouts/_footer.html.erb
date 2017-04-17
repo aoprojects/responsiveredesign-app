@@ -1,16 +1,17 @@
 <footer>
-	<h1>This is the footer</h1>
+	<h4><%= link_to 'Responsive Redesign',root_path %></h4>
 
 	<div class="row">
 		<div class="col-md-4">
-			Col 1
-		</div>
-		<div class="col-md-4">
-			Order a Redesign
-		</div>
-		<div class="col-md-4">
 			<p>Follow us on Social</p>
-			<p>Sign up for our Newsletter</p>
+			<p><button class="un-button">Contact us directly</button></p>
+		</div>
+		<div class="col-md-4">
+			<button class="un-button"><%= link_to 'Order a Redesign', order_path %><button>
+		</div>
+		<div class="col-md-4">
+			
+			<p><button class="un-button">Sign up for our Newsletter</button></p>
 		</div>
 	</div>
 </footer>
