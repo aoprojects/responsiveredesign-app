@@ -8,7 +8,7 @@ gem 'sqlite3', group: [:development, :test]
 # use postgress for database in production
 gem 'pg', group: :production
 # apparently needed for Heroku, not sure why.
-# gem 'rails_12factor', group: :production
+gem 'rails_12factor', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -27,9 +27,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'bootstrap-sass'
 
-# gem 'stripe'
+gem 'stripe'
 # figaro gem for securely managing credentials, like stripe api keys
 gem 'figaro'
 
