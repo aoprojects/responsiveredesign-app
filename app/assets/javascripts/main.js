@@ -11,6 +11,7 @@ $( document ).ready(function() {
 	$( "#xs_hamburger" ).click(function() {
 		$( "#nav_elements" ).toggle( "fast" );
 		$(this).toggleClass("hamburger_clicked");
+		$("main").toggleClass("adjusted_down");
 	});
 });
 

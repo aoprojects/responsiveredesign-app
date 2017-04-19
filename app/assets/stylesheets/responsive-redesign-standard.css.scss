@@ -56,14 +56,17 @@ main {
 			text-align: center;
 		}
 	}
+
 }
 
-@media only screen and (max-width: 991px) {
-	main {
-		position: relative;
-		top: 300px;
-	}
+@media only screen and (min-width: 768px) {
+
 }
+// for wider than sm and xs screens
+
+@media only screen and (max-width: 991px) {
+
+}// end media query for larger than tablet
 
 .btn-default {
 	/*background-color: transparent;*/
@@ -194,13 +197,23 @@ nav ul li a:hover {
 	color: white;
 }
 
-/* NAVIGATION styles for tablets and larger */
+/* NAVIGATION styles for mobile and tablets below */
+@media only screen and (max-width: 991px) {
+	#nav_elements {
+		display: none;
+	}
+	main {
+		position: relative;
+		// top: 300px;
+	}
+	.adjusted_down {
+		position: relative;
+		top: 300px;
+		transition: ease 0.5s;
+	}
+}// to hide nav menu items on tablet and mobile sizes
 
-@media only screen and (min-width: 992px) {
-
-
-}/* end media query for large screen sizes */
-/* Begin NAVIGATION styles for desktop and larger */
+/* Begin NAVIGATION styles for desktop and larger below */
 @media only screen and (min-width: 992px) {
 	/*begin styling for navigation*/
 	nav ul {
@@ -221,6 +234,9 @@ nav ul li a:hover {
 	}
 	#xs_hamburger {
 		display: none;
+	}
+	#nav_elements {
+		display: inline;
 	}
 	/*end styling for navigation*/
 }/*display for desktop screens only*/
