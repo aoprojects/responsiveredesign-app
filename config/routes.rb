@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   root 'pages#index'
   get 'receipt' => 'pages#receipt'
   get 'order' => 'pages#order'
+  get 'faq' => 'pages#faq'
+  get 'contact_us' => 'pages#contact_us'
+  get 'privacy_and_terms' => 'pages#privacy_and_terms'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">	
-    <title>Responsive Redesign</title>
+    <meta name="description" content="Order a mobile responsive redesign of your website today. Fast, cheap, modern.">
+    <meta name="author" content="Virgo Ventures LLC (DBA Responsive Redesign">	
+    <title>Responsive Redesign | <%= content_for(:subtitle) %></title>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -17,7 +17,7 @@
     <script src="https://use.fontawesome.com/9aee4020bc.js"></script>
 
 </head>
-<body>
+<body class="<%= controller_name %>_<%= action_name%>">
 
 	<%= render 'layouts/nav' %>
 	<%= render 'layouts/newsletter_modal_text' %>
