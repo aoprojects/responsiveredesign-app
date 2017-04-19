@@ -1,5 +1,9 @@
 <footer>
-	<h4><%= link_to 'Responsive Redesign',root_path, class: "orange" %></h4>
+	<h4 class="footer-logo"><%= link_to root_path do %>
+			<%= image_tag('rr-logo.png') %>
+		<% end %>
+		<p class="hidden">Responsive Redesign</p>
+	</h4>
 
 	<div class="row">
 		<div class="col-md-4">

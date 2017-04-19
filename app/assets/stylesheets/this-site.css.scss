@@ -79,6 +79,13 @@ footer {
 		// color: white;
 	}
 }
+.footer-logo {
+	max-height: 150px;	
+	display: relative;
+	img {
+		max-height: 150px;
+	}
+}
 h2 {
 	text-align: center;
 	color: $orange !important;
