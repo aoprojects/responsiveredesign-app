@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'receipt' => 'pages#receipt'
   get 'order' => 'pages#order'
   get 'faq' => 'pages#faq'
-  get 'contact_us' => 'pages#contact_us'
+  # get 'contact_us' => 'pages#contact_us'
   get 'privacy_and_terms' => 'pages#privacy_and_terms'
 
 
