@@ -139,12 +139,20 @@ nav {
 	width: 100%;
 	color: #jjj;
 	padding: 20px;
+	height: 100px;
 }
-nav #brand {
+nav #brand-text {
 	color: #eee;
 	padding-left: 40px;
 	padding-top: 0px;
 	font-size: 25px;
+	display: none;
+}
+nav #nav-logo {
+	position: fixed;
+	top: -30px;
+	left: 30px;
+	max-height: 170px;
 }
 nav #xs_hamburger {
 	color: #eee;
@@ -170,6 +178,7 @@ nav ul li {
 	width: 100%;
 	color: #eee;
 	text-align: center;
+
 }
 nav ul li:hover {
 	color: rgba(229,137,0,1.0);
@@ -220,7 +229,7 @@ nav ul li a:hover {
 		position: fixed;
 		right: 0;
 		top:0;
-		width: 60vw;
+		width: 50vw;
 		// width is 70vw when 8 nav elements total, instead of 6
 		/*top: 0;*/
 	}

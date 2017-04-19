@@ -1,5 +1,8 @@
 <nav>
-    <h1 id="brand" class="orange"><%= link_to "ResponsiveRedesign.io", root_path, class: "orange" %></h1>
+    <h1>
+        <%= link_to "ResponsiveRedesign.io", root_path, id: "brand-text", class: "orange" %>
+        <%= image_tag('rr-logo-white.png', id: 'nav-logo') %>
+    </h1>
     <div id="xs_hamburger">
         <div id="hamburger_icon">
             <%= image_tag("list-menu.png") %>
