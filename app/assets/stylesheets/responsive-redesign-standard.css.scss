@@ -17,6 +17,7 @@ large and desktop
 $gray-background: rgba(63,67,64,1.0);
 $dark-purple: #4c3257;
 $orange: rgba(255,153,0,1.0);
+$gray-text: #aaa;
 
 a {
 	color: rgba(255,153,0,1.0);/*the site's theme pop color - orange*/
@@ -128,20 +129,27 @@ main, footer {
 /* FAQ */
 
 .question {
-	color: $orange;
 	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 5px;
 }
 
 .answer {
 	font-size: 18px;
 	indent: 10px;
-
+	color: $gray-text;
+	padding-left: 25px;
 }
 
+/* DROP ARROW TOGGLE */
 
-
-
-
+.after-toggle {
+	display: none;
+	// for initially hiding down angle in dropdown toggle web_dev web_rates
+}
+.answer {
+	display: none;
+}
  /* FORMS */
 
 form { 

@@ -13,6 +13,20 @@ $( document ).ready(function() {
 		$(this).toggleClass("hamburger_clicked");
 		$("main").toggleClass("adjusted_down");
 	});
+
+	$(".question").click(function(event) {
+		event.stopImmediatePropagation();
+		$(this).next(".answer").toggle("fast");
+	});
+
+	$( ".rate_category").click(function() {
+		$(this).next(".rate_category_details").toggle("fast");
+		$(this).find("span.before-toggle").toggle();
+		$(this).find("span.after-toggle").toggle();
+	});
+
+
+
 });
 
 // css("display:inline")
