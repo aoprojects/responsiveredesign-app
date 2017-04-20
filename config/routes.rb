@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
   root 'pages#index'
   get 'receipt' => 'pages#receipt'
-  get 'order' => 'pages#order'
   get 'faq' => 'pages#faq'
   # get 'contact_us' => 'pages#contact_us'
   get 'privacy_and_terms' => 'pages#privacy_and_terms'
     # we do not want all resources for the order routes
   get 'orders' => 'orders#index'
   get 'new_order' => 'orders#new'
+  get 'order' => 'order#show'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
