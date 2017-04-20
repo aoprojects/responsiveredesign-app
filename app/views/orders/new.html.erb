@@ -1,46 +1,62 @@
 <% content_for(:subtitle) do %>Order A Redesign<% end %>
 <!-- begin order form area for responsive design work -->
+
+<h3>Order a responsive design immediately. No waiting. No phone calls necessary. </h3>
+
 <section id="order-from-section">
 
 	<%= form_for @order do |order| %>
+		<%= order.label :your_name %><br>
+		<%= order.text_field :contact_name, required: true %>
+
+		<br>
+
+		<%= order.label :Your_company_name %><br>
+		<%= order.text_field :contact_company_name %>
+
+		<br>
+
+		<%= order.label :Your_email %><br>
+		<%= order.text_field :contact_email %>
+
+		<br>
+
+		<%= order.label :Preferred_contact_number %><br>
+		<%= order.text_field :contact_phone_number %>
+
+		<!-- todo as them if they prefer text or not -->
+		<br>
+
+		<%= order.label :What_type_of_design_work_would_you_like_to_order %><br>
+		<%= order.select :project_type, Order::ORDER_TYPES, {style: "min-width: 100px;"}, prompt: "Choose a project type" %>
+
+		<br>
+
+		<%= order.label :What_shall_we_call_this_project %><br>
+		<%= order.text_field :project_name %>
+
+		<br>
+
+		<%= order.label :What_is_your_timeline %><br>
+		<%= order.text_field :project_timeline %>
+
+		<br>
+
+		<%= order.label :Anything_else_we_should_know %><br>
+		<%= order. text_area :additional_comments %>
 		
+		<br>
+
+		<div class="hidden">
+			<!-- todo recaptcha here -->
+		</div>
+
+		<button class='btn btn-success btn-lg'>Order The Work</button>
+
 
 
 	<% end %>
 
-		<h3>Order a responsive design immediately. No waiting. No phone calls necessary. </h3>
-
-		<h2>What type of design work would you like to order?</h2>
-
-		Your&nbsp;Name
-
-
-		Your&nbsp;Company
-
-
-		Your&nbsp;Email
-
-
-		Your&nbsp;Phone
-
-		Which&nbsp;service&nbsp;are&nbsp;you interested&nbsp;in?
-
-		Quick responsive design of an existing site
-		New website design (not a redesign)
-		Full, custom web application
-		Mobile application
-		Other
-
-		What shall we call this project?
-
-
-		What is your timeline?
-
-
-		Additional comments/questions?
-
-		<button class='btn btn-success btn-lg'>Order The Work</button>
-
-		Or, you can instead <button>Contact us for a traditional phone call</button>
+		<p>Or, you can instead <button class="un-button">Contact us for a traditional phone call</button>.</p>
 
 </section><!-- end #order-form-section -->

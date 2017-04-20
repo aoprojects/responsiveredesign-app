@@ -11,11 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170420005130) do
+ActiveRecord::Schema.define(version: 20170420011417) do
 
   create_table "orders", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+    t.string   "contact_name"
+    t.string   "contact_company_name"
+    t.string   "contact_email"
+    t.string   "contact_phone_number"
+    t.string   "project_type"
+    t.string   "project_name"
+    t.string   "project_timeline"
+    t.string   "additional_comments"
   end
 
 end
