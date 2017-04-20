@@ -6,65 +6,69 @@
 <section id="order-from-section">
 
 	<%= form_for @order do |order| %>
-		<%= order.label :your_name %>&nbsp;&nbsp;
-		<%= order.text_field :contact_name, required: true %>
 
-		<br>
+	  	<div class="form-group">
+			<%= order.label :your_name %>&nbsp;&nbsp;
+			<%= order.text_field :contact_name, required: true %>	
+		</div><!-- end .form-group -->
 
-		<%= order.label :Your_company_name %>&nbsp;&nbsp;
-		<%= order.text_field :contact_company_name %>
+	  	<div class="form-group">
+			<%= order.label :Your_company_name %>&nbsp;&nbsp;
+			<%= order.text_field :contact_company_name %>
+		</div><!-- end .form-group -->
 
-		<br>
+	  	<div class="form-group">
+			<%= order.label :Your_email %>&nbsp;&nbsp;
+			<%= order.text_field :contact_email %>
+		</div><!-- end .form-group -->
 
-		<%= order.label :Your_email %>&nbsp;&nbsp;
-		<%= order.text_field :contact_email %>
+		 <div class="form-group">
+			<%= order.label :Preferred_contact_number %>&nbsp;&nbsp;
+			<%= order.text_field :contact_phone_number %>
+		</div><!-- end .form-group -->
 
-		<br>
+		<div class="form-group">
+			<%= order.label :Do_you_prefer_texting_vs_phone_calls? %>&nbsp;&nbsp;
+			<%= order.check_box :text_preferred %>
+		</div><!-- end .form-group -->
 
-		<%= order.label :Preferred_contact_number %>&nbsp;&nbsp;
-		<%= order.text_field :contact_phone_number %>
+		<div class="form-group">
+			<%= order.label :What_type_of_design_work_would_you_like_to_order? %>&nbsp;&nbsp;
+			<%= order.select :project_type, Order::ORDER_TYPES, {style: "min-width: 100px;"}, prompt: "Choose a project type" %>
+		</div><!-- end .form-group -->
 
-		<br>
+		<div class="form-group">
+			<%= order.label :What_shall_we_call_this_project? %>&nbsp;&nbsp;
+			<%= order.text_field :project_name %>
+		</div><!-- end .form-group -->
 
-		<%= order.label :Do_you_prefer_texting_vs_phone_calls? %>&nbsp;&nbsp;
-		<%= order.check_box :text_preferred, label: "Yes, I prefer texts" %>
+		<div class="form-group">
+			<%= order.label :What_is_your_timeline? %>&nbsp;&nbsp;
+			<%= order.text_field :project_timeline %>
+		</div><!-- end .form-group -->
 
-		<br>
+		<div class="form-group">	
+			<%= order.label :Anything_else_we_should_know? %>&nbsp;&nbsp;
+			<%= order.text_area :additional_comments %>
+		</div><!-- end .form-group -->
 
-		<%= order.label :What_type_of_design_work_would_you_like_to_order? %>&nbsp;&nbsp;
-		<%= order.select :project_type, Order::ORDER_TYPES, {style: "min-width: 100px;"}, prompt: "Choose a project type" %>
+		<div class="form-check">	
+			<%= order.label :I_prefer_to_do_this_entire_project_without_phone_calls, class: "" %>&nbsp;&nbsp;
+			<%= order.check_box :preference_no_call, class: "form-control" %>
+		</div><!-- end .form-group -->
 
-		<br>
-
-		<%= order.label :What_shall_we_call_this_project? %>&nbsp;&nbsp;
-		<%= order.text_field :project_name %>
-
-		<br>
-
-		<%= order.label :What_is_your_timeline? %>&nbsp;&nbsp;
-		<%= order.text_field :project_timeline %>
-
-		<br>
-
-		<%= order.label :Anything_else_we_should_know? %>&nbsp;&nbsp;
-		<%= order.text_area :additional_comments %>
-
-		<br>
-
-		<%= order.label :I_prefer_to_do_this_entire_project_without_phone_calls %>&nbsp;&nbsp;
-		<%= order.check_box :preference_no_call %>
-		
-		<br>
 
 		<div class="hidden">
 			<!-- todo recaptcha here -->
 		</div>
 
-		<button class='btn btn-success btn-lg'>Order The Work</button>
+		<div class="submit-button-div" >
+			<%= order.submit "Order The Work", class: "btn btn-success btn-lg submit-button" %>
+		</div>
 
 	<% end %>
-
-		<p>Or, you can instead<button class="un-button orange" data-toggle="modal" data-target="#contactUsModal">contact us for a traditional phone call.</button></p>
+		<br>
+		<p class="text-center">Or, you can instead<button class="un-button orange" data-toggle="modal" data-target="#contactUsModal">contact us for a traditional phone call.</button></p>
 
 </section><!-- end #order-form-section -->
 
