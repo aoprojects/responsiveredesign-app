@@ -187,7 +187,12 @@ nav {
 .pure-white {
 	color: white !important;
 }
-
+.text-far-right {
+	text-align: right;
+	position: relative;
+	top: -30px;
+	right: -30px;
+}
 .thank-you-text {
 	text-align: center;
 	.btn-success {
