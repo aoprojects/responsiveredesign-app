@@ -1,28 +1,55 @@
 <!-- provide custom subtitle for each page -->
 <% content_for(:subtitle) do %>FAQ<% end %>
 
-<h1>Frequntly Asked Questions</h1>
+<div class="container">
+	<h1 class="orange">Frequently Asked Questions</h1>
 
-<section id="faq-section">
-	<div class="question">
-		Question 1 TODO
-	</div>
-	<div class="answer">
-		Answer 1 TODO
+	<div class="button-div text-right">
+		<%= link_to "Order A Design", new_order_path, class: "btn btn-default" %>
 	</div>
 
-	<div class="question">
-		Question 2 TODO
-	</div>
-	<div class="answer">
-		Answer 2 TODO
-	</div>
+	<section id="faq-section">
+		<div class="question">
+			
+			Question 1 TODO &nbsp;<%= render 'layouts/drop_arrows' %>
+		</div>
+		<div class="answer">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
 
-	<div class="question">
-		Question 3 TODO
-	</div>
-	<div class="answer">
-		Answer 3 TODO
-	</div>	
+		<div class="question">
+			Question 2 TODO
+		</div>
+		<div class="answer">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
 
-</section>
+		<div class="question">
+			Question 3 TODO
+		</div>
+		<div class="answer">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>	
+
+	</section>
+
+	<div class="button-div text-right">
+		<%= link_to "Order A Design", new_order_path, class: "btn btn-default" %>
+	</div>
+	<!-- todo  feedback area - let them add their new questions -->
+</div><!-- end .container

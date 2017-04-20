@@ -125,6 +125,23 @@ main, footer {
 	BEGIN STYLES FOR SPECIFIC PURPOSE GROUPS
  ------------ */
 
+/* FAQ */
+
+.question {
+	color: $orange;
+	font-size: 20px;
+}
+
+.answer {
+	font-size: 18px;
+	indent: 10px;
+
+}
+
+
+
+
+
  /* FORMS */
 
 form { 
