@@ -1,7 +1,10 @@
 <nav>
     <h1>
         <%= link_to root_path do %>
-            <%= image_tag('rr-logo-white-long-left.png', id: 'nav-logo') %>
+            <!-- displays on larger screen sizes -->
+            <%= image_tag('rr-logo-white-long-left.png', class: "hidden-xs", id: 'nav-logo-single-row') %>
+            <!-- displays on smaller screen sizes -->
+            <%= image_tag('rr-logo-white.png', class: "hidden-sm hidden-md hidden-lg", id: 'nav-logo-double-row') %>
             <p class="hidden orange">ResponsiveRedesign.io</p>
         <% end %>
     </h1>

@@ -147,12 +147,21 @@ nav #brand-text {
 	padding-top: 0px;
 	font-size: 25px;
 	display: none;
-}
-nav #nav-logo {
+}// was using this for the nav area text logo. Not really anymore.
+nav #nav-logo-single-row {
+	display: inline;
 	position: fixed;
 	top: 0px;
 	left: 30px;
 	max-height: 100px;
+	max-width: 50vw; // will get smaller when viewport is 800px wide or smaller, since logo file is 400px wide and is restricted to max half of width
+}
+nav #nav-logo-double-row {
+	display: inline;
+	position: fixed;
+	top: -25px;
+	left: 15px;
+	max-height: 160px;
 }
 nav #xs_hamburger {
 	color: #eee;
