@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170420011417) do
+ActiveRecord::Schema.define(version: 20170420182611) do
 
   create_table "orders", force: :cascade do |t|
     t.datetime "created_at",           null: false
@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 20170420011417) do
     t.string   "project_name"
     t.string   "project_timeline"
     t.string   "additional_comments"
+    t.boolean  "text_preferred"
+    t.boolean  "preference_no_call"
   end
 
 end

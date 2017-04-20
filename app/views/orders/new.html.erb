@@ -6,44 +6,53 @@
 <section id="order-from-section">
 
 	<%= form_for @order do |order| %>
-		<%= order.label :your_name %><br>
+		<%= order.label :your_name %>&nbsp;&nbsp;
 		<%= order.text_field :contact_name, required: true %>
 
 		<br>
 
-		<%= order.label :Your_company_name %><br>
+		<%= order.label :Your_company_name %>&nbsp;&nbsp;
 		<%= order.text_field :contact_company_name %>
 
 		<br>
 
-		<%= order.label :Your_email %><br>
+		<%= order.label :Your_email %>&nbsp;&nbsp;
 		<%= order.text_field :contact_email %>
 
 		<br>
 
-		<%= order.label :Preferred_contact_number %><br>
+		<%= order.label :Preferred_contact_number %>&nbsp;&nbsp;
 		<%= order.text_field :contact_phone_number %>
 
-		<!-- todo as them if they prefer text or not -->
 		<br>
 
-		<%= order.label :What_type_of_design_work_would_you_like_to_order %><br>
+		<%= order.label :Do_you_prefer_texting_vs_phone_calls? %>&nbsp;&nbsp;
+		<%= order.check_box :text_preferred, label: "Yes, I prefer texts" %>
+
+		<br>
+
+		<%= order.label :What_type_of_design_work_would_you_like_to_order? %>&nbsp;&nbsp;
 		<%= order.select :project_type, Order::ORDER_TYPES, {style: "min-width: 100px;"}, prompt: "Choose a project type" %>
 
 		<br>
 
-		<%= order.label :What_shall_we_call_this_project %><br>
+		<%= order.label :What_shall_we_call_this_project? %>&nbsp;&nbsp;
 		<%= order.text_field :project_name %>
 
 		<br>
 
-		<%= order.label :What_is_your_timeline %><br>
+		<%= order.label :What_is_your_timeline? %>&nbsp;&nbsp;
 		<%= order.text_field :project_timeline %>
 
 		<br>
 
-		<%= order.label :Anything_else_we_should_know %><br>
-		<%= order. text_area :additional_comments %>
+		<%= order.label :Anything_else_we_should_know? %>&nbsp;&nbsp;
+		<%= order.text_area :additional_comments %>
+
+		<br>
+
+		<%= order.label :I_prefer_to_do_this_entire_project_without_phone_calls %>&nbsp;&nbsp;
+		<%= order.check_box :preference_no_call %>
 		
 		<br>
 
@@ -53,10 +62,11 @@
 
 		<button class='btn btn-success btn-lg'>Order The Work</button>
 
-
-
 	<% end %>
 
-		<p>Or, you can instead <button class="un-button">Contact us for a traditional phone call</button>.</p>
+		<p>Or, you can instead<button class="un-button orange" data-toggle="modal" data-target="#contactUsModal">contact us for a traditional phone call.</button></p>
 
 </section><!-- end #order-form-section -->
+
+
+
