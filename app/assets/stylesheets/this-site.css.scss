@@ -77,8 +77,15 @@ footer {
 	color: white;
 	background-color: $gray-background;
 	// position: relative;
-	a, button, i {
-		// color: white;
+	p, a, button {
+		color: white !important;
+		font-weight: 400px !important;
+	}
+	a:hover, button:hover {
+		color: $orange !important;
+	}
+	i {
+		color: $orange;
 	}
 }
 .footer-logo {
@@ -86,6 +93,15 @@ footer {
 	display: relative;
 	img {
 		max-height: 150px;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.footer-logo-image {
+		position: relative;
+		bottom: -10px;
+	}
+	footer {
+		// max-height: 300px;
 	}
 }
 h2 {

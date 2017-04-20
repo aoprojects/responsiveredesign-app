@@ -1,6 +1,6 @@
 <footer>
 	<h4 class="footer-logo"><%= link_to root_path do %>
-			<%= image_tag('rr-logo.png') %>
+			<%= image_tag('rr-logo-white.png', class: "footer-logo-image") %>
 		<% end %>
 		<p class="hidden">Responsive Redesign</p>
 	</h4>
@@ -12,10 +12,15 @@
 			</p>
 		</div>
 		<div class="col-md-4">
-			<%= link_to 'Order a Redesign', new_order_path, class: "un-button" %>
+			<p>
+				<%= link_to 'Order a Redesign', new_order_path, class: "un-button" %>
+			</p>
 		</div>
 		<div class="col-md-4">
-			<p><button class="un-button" data-toggle="modal" data-target="#contactUsModal">Contact Us Directly</button><br>
+			<p>
+				<button class="un-button" data-toggle="modal" data-target="#contactUsModal">Contact Us Directly</button>
+			</p>
+			<br>
 			<!-- <button class="un-button" data-toggle="modal" data-target="#newsletterModal">Sign up for our Newsletter</button></p> -->
 		</div>
 	</div>
