@@ -113,7 +113,7 @@ main #center-main-section h1 {
 main section {
 	padding: 50px;
 }
-main section:nth-child(2n) {
+.pages_index main section:nth-child(2n) {
 	/*background-color: rgba(130,130,130,10);*/
 	background-color: rgba(63,67,64,1.0);
 	color: #eee;
