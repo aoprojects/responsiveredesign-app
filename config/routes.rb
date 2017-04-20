@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   get 'faq' => 'pages#faq'
   # get 'contact_us' => 'pages#contact_us'
   get 'privacy_and_terms' => 'pages#privacy_and_terms'
+    # we do not want all resources for the order routes
+  get 'orders' => 'orders#index'
+  get 'new_order' => 'orders#new'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
