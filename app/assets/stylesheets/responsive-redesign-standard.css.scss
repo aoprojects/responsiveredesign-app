@@ -278,6 +278,12 @@ nav ul li a:hover {
 @media only screen and (max-width: 991px) {
 	#nav_elements {
 		display: none;
+		width: 100%;
+		background-color: $gray-background;
+		position: fixed;
+		top: 100px;
+		left: 0px;
+		padding-bottom: 10px;
 	}
 	main {
 		position: relative;
@@ -315,7 +321,8 @@ nav ul li a:hover {
 	}
 	#nav_elements {
 		display: inline !important;
-	}
+	}// nav elements will appear in two rows, within main desktop nav row, on larger screens
+
 	/*end styling for navigation*/
 }/*display for desktop screens only*/
 
