@@ -151,13 +151,32 @@ main, footer {
 .answer {
 	display: none;
 }
- /* FORMS */
+ /* FORMS AND THEIR INPUTS */
 
 form { 
 	max-width: 700px;
 	margin: 0 auto;
 	width: 100%;
-	input {
+	font-size: 16px;
+	.form-group:active {
+		border-top: none !important;
+		border-left: none !important;
+		border-right: none !important;
+	}
+	// put .form-select onto drop down selections
+	.form-select {
+		width: 100%;
+		height: 35px;
+		font-size: 16px;
+		border-radius: 0px !important;
+		border: 2px solid #eee;
+		background-color: transparent;
+	}
+	.form-select:focus {
+
+	}
+	// put .text-input on input fields, both textfields and textareas
+	.text-input {
 		border-radius: 0px;
 		width: 100%;
 		height: 30px;
@@ -166,23 +185,23 @@ form {
 		border-right: 0;
 		outline: none;
 	}
-	input:active, input:focus, input:hover, input:active {
+	.text-input:active, .text-input:focus, .text-input:hover, .text-input:active, .text-input:visited {
 		border-radius: 0px;
 		width: 100%;
-		border-top: 0;
-		border-left: 0;
-		border-right: 0;
+		border-top: 0 !important;
+		border-left: 0 !important;
+		border-right: 0 !important;
 		border-bottom: 1px solid $orange;
 		box-shadow: none;
 	} 
-	textarea {
+	textarea.text-input {
 		border-radius: 0px;
 		width: 100%;
 		border: 1px solid #eee;
 		height: 70px;
 		overflow: scroll;
 	}
-	textarea:focus, textarea:active {
+	textarea.text-input:focus, textarea.text-input:active {
 		border: 1px solid $orange;
 	}
 	.submit-button {
