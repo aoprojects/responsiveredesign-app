@@ -26,48 +26,123 @@
         <section id="why-responsive">
             <h2>Why is mobile responsive so important?</h2>
 
-            <h3>Static Websites Damage Sales</h3>
-            <ul>
-                <li>Bounce rates in excess of 50%: most customers leave your site ASAP</li>
-                <li>Second most common reason for leaving a site, only behind slow loading</li>
-                <li>1 in 3 customers abandon a purchase due to the annoyance of a static site</li>
-                <li>69% of customers prefer to order online than over the phone </li>
-                <li>55% of all e-commerce interactions taking place on smartphones</li>
-                <li>42% of customers will post a poor review, vs just 24% over the phone [what does this one mean?]</li>
-                <li>[waste of time and money to have a separate site for each mobile, tablet, deskto.] [Number of different devices that represent different screen sizes]</li>
-            </ul>
-            <p>Having a fully responsive website has never been more critical.</p>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
 
-            <h3>Benefits Of Responsive Websites</h3>
-            <ul>
-                <li>Reduce your bounce rate to less than 20% (Forbes)</li>
-                <li>User feel like you are a modern company who is always ready for them, wherever device they’re on.  This means they feel they can trust your brand.</li>
-                <li>Customers can interact with you quickly, rather than put your site on a list to ‘deal with later’ when they’re at a desktop.</li>
-            </ul>
-            
+                  
+                    <h3>Static Websites Damage Sales</h3>
+                    <ul>
+                        <li>Bounce rates in excess of 50%: most customers leave your site ASAP</li>
+                        <li>Second most common reason for leaving a site, only behind slow loading</li>
+                        <li>1 in 3 customers abandon a purchase due to the annoyance of a static site</li>
+                        <li>69% of customers prefer to order online than over the phone </li>
+                        <li>55% of all e-commerce interactions taking place on smartphones</li>
+                        <li>42% of customers will post a poor review, vs just 24% over the phone [what does this one mean?]</li>
+                        <li>[waste of time and money to have a separate site for each mobile, tablet, deskto.] [Number of different devices that represent different screen sizes]</li>
+                    </ul>
+
+                </div><!-- end .col -->
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <h3>Benefits Of Responsive Websites</h3>
+                    <ul>
+                        <li>Reduce your bounce rate to less than 20% (Forbes)</li>
+                        <li>User feel like you are a modern company who is always ready for them, wherever device they’re on.  This means they feel they can trust your brand.</li>
+                        <li>Customers can interact with you quickly, rather than put your site on a list to ‘deal with later’ when they’re at a desktop.</li>
+                    </ul>
+                </div><!-- end .col -->
+            </div><!-- end .row -->
+            <p class="orange text-center">Having a fully responsive website has never been more critical.</p>
         </section><!-- end #why-responsive -->
 
         <!-- begin upper right section -->
         <section id="your-options">
             <h2>Your options - How to update your site</h2>
 
-            <ol>
-                <li><u>Option 1:</u>&nbsp;Do it yourself. You can use a template engine. They cost time to edit, money per feature (like custom domains), and they offer limited pre-set functionality. They also often hiden their back end code, which means you'll have to hire an expensive design agency ($5,000 minimums are common) to hack around the template's limitations.</li>
-                <li><u>Option 2:</u>&nbsp;Hire a super cheap offshore design agency. This is great if you want just text edited, or a couple of colors changed. But we wouldn't recommend this option if you want to get the job done quickly and place your trust in the hands of a stranger. American standards are just different. Mamy offshore agencies seem to get it just a bit wrong. They etc.  hey often get the little things just a bit wrong. <br> 
-                Examples of not-so-great things we've seen when working with offshore designers:
-                    <ul>
-                        <li>Offer an older design style, by using antiquated HTML tags, or by writing their styling inline instead of in a stylesheet (much harder to edit later), or by using tables to create columns instead of floating rows that truly respond to the width of your browser</li>
-                        <li>Strange word use, like "telephony" instead of "Telephone"</li>
-                        <li>Create a responsive site that doesn't interact with the customer by not using CSS animations to make the elements of your site slide in or out with scrolling. 
-                        <br>Hint: It's <strong>movement</strong> makes a site modern, and we put this into every site we can.</li>
-                    </ul>
-                </li>
-                <li><u>Option 4:</u> Hire an expensive agency that's been around for a while.<br> 
-                    They'll get the job done - for $5,000 - $10,000 at least. THey'll also do time-sucking things like make wireframes, design a new color pallete, redesign your logo, rebrand your social sites, conduct user focus groups, and do A/B testing with keyword research. </li>
-                <li><u>Option 4:</u>&nbsp;Hire Responsive Redesign. <br>
-                    Your new, custom, mobilee responsive site can be uploaded live to your custom domain, with your custom features, in a week or less – for cheap.</li>
-            </ol>
+            <ul>
+                <div class="row">
 
+                    <li class="col-md-4 col-sm-4 col-xs-12">
+
+                        <h3>Do it yourself</h3> 
+
+                        <p>You can use a template engine.</p>
+
+                        <p>They're great if you have time to edit, some money per feature (like custom domains and calendar booking system subscriptions).</p>
+
+                        <p>You have to spend time taking down the template styles, figure out how your styles can fit in with that template's needs, and maybe learn something about HTML so you don't end up designing the footer to act like the main or breaking their JavaScript.</p>
+
+                        <p>They also often hiden their back end code, which means you'll have to hire an expensive design agency ($5,000 minimums are common) to hack around the template's limitations.</p>
+
+                    </li>
+
+                    <li class="col-md-4 col-sm-4 col-xs-12">
+
+                        <h3>Hire a super cheap offshore design agency</h3>
+
+                        <p>This is great if you want just text edited, or a couple of colors changed.</p>
+
+                        <p>We wouldn't recommend this option if you want to get a good job done quickly.<p>
+
+                        <p>Political correctness aside, <span class="orange">American standards are just different.</span></p>
+
+                        <p class="orange unstyled-question">How do many offshore agencies get it just a bit wrong? <%= render 'layouts/drop_arrows' %></p>
+
+                        <span class="unstyled-answer">
+                            <p>What we've seen, and why we started this company:</p>
+                            <ul>
+                                <li>Offer an older design style, by using antiquated HTML tags, or by writing their styling inline instead of in a stylesheet (much harder to edit later), or by using tables to create columns instead of floating rows that truly respond to the width of your browser</li>
+                                <li>Strange word use, like "telephony" instead of "Telephone", that makes its way into your site.</li>
+                                <li>Development of sites that don't interact with the customer very much. No special touches, like the use of CSS animations to make the elements of your site slide in or out with scrolling. 
+                            
+                                <p><span class="orange">Tip:</span> It's movement makes a site modern, and we put this into every site we can.</li>
+                            </ul>
+                        </span>
+                    </li><!-- end .col -->
+
+                    <li class="col-md-4 col-sm-4 col-xs-12">
+                        <h3>Hire an expensive, full-service agency that's been around for a while</h3>
+                        <p>They'll get the job done and more.  For $8,000 - $20,000 USD at least. <br>
+                        <p>They'll also do time-sucking things like make wireframes, design a new color pallete, redesign your logo, rebrand your social sites, conduct user focus groups, and do A/B testing with keyword research.</p>
+                    </li>
+
+            </div><!-- end .row -->
+
+            <div class="row border-top">
+
+                <li class="col-xs-12 text-center">Or...<br><%= link_to "Hire Responsive Redesign", new_order_path, class: "btn btn-default btn-lg" %>
+                    <br><br>
+                    <p>Your new, custom, mobile responsive site can be uploaded live to your custom domain, with your custom features, in a week or less. Cheap.</p>
+                </li>
+
+            </div><!-- end .row -->
+            </ul>
+
+        </section>
+    
+        <section id="why-us">
+            <h2>What’s special about ResponsiveRedesign.io</h2>
+            <ul class="row">
+                <li class="col-md-4 col-sm-12 col-xs-12">
+                    <h3>Manged by Entrepreneurs</h3>
+                    <p>We understand your business' goals, and we know how to help you <i>become the brand your customers are looking for.</i><!-- .orange --></p>
+
+                    <p>We have personal experience in:<br>
+                        <span class="indent-left">Real Estate, Product Supply and Distribution, Theatrics and Performance, Design and Artistic Work, Scientific Research, Startup company culture and Entrepreneurship, Social good business models, and more.</span>
+                    </p>
+                      
+                </li><!-- end li.col -->    
+                <li class="col-md-4 col-sm-12 col-xs-12">
+                    <h3>We demand qualty</h3>
+                    <p>We are all in business to do good work. <br>
+                        <i>Se let's only do good work.</i></p>
+
+                </li><!-- end li.col -->
+                <li class="col-md-4 col-sm-12 col-xs-12">
+                    <h3>We work quickly</h3>
+                    <p>We will quickly lower your bounce rate and help speed up your customer acquisition process.</p>
+                    <p>Your site can be fully responsive, functional, and live in a week or less, often for a flat fee of $3,500, which is half the price of the market average.</p>
+                </li>
+            </ul><!-- end ul.row -->
         </section>
         <section>
             <h2>How we keep the prices down</h2>
@@ -87,30 +162,25 @@
             <p class="text-center">It's fast.&nbsp;&nbsp;If you contact us on Monday, your new site can be uploaded by Friday.</p>
         </section>
 
-        <section id="why-us">
-            <h2>What’s special about ResponsiveRedesign.io</h2>
-            <ul>
-                <li>We are also business owners. <br>
-                    We understand your business goals, and how to meet your modern customers’ expectations.</li>
-                    <ul>We have personal experience in the following industries:
-                        <li>Real Estate</li>
-                        <li>Product Supply &amp; Distribution</li>
-                        <li>Startup company culture &amp; Entrepreneurship</li>
-                        <li>Theatrics and Performance</li>
-                        <li>Scientific Research</li>
-                    </ul>
-                <li>We will quickly transform your users’ browsing experience, lower your bounce rate, and speed up your customer acquisition process.</li>
-                <li>Your site can be fully responsive, functional, and live in a week or less, often for a flat fee of $3,000, which is half the price of the market average.</li>
-                <li>FYI, a week is wicked fast in development time for a new, modern, custom site.</li>
-            </ul>
-        </section>
         <section id="pricing">
             <h2>Our Pricing  (How We Compare)</h1>
-                <ul>
-                    <li>comparsions</li>
-                    <li></li>
-                    <li></li>
+                <ul class="row text-center">
+                    <li class="col-md-4 col-sm-4 col-xs-12">
+                        <p>comparsions</p>
+
+                    </li>
+                    <li class="col-md-4 col-md-4 col-xs-12">
+                        <p>comparison 2</p>
+
+                    </li>
+                    <li class="col-md-4 col-col-md-6 col-xs-12">
+                        <p>comparison 3</p>
+
+                    </li>
                 </ul>
+            <div class="text-center">
+                <%= link_to "Order A Project Now", new_order_path, class: "btn btn-default btn-lg white" %> 
+            </div>
         </section><!-- end how we compare -->
        <!--  <section id="portfolio">
             <h2>Examples of Our Work</h2>

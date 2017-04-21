@@ -80,6 +80,10 @@ main, footer {
 
 }// end media query for larger than tablet
 
+.border-top {
+	margin-top: 40px;
+	border-top: 1px solid $gray-text;
+}
 .btn-default {
 	/*background-color: transparent;*/
 	color: black !important;
@@ -88,6 +92,7 @@ main, footer {
 	margin: 20px;
 	border-radius: 2px;
 }
+
 .btn-default:hover {
 	transform: scale(1.1);
 	color: black;
@@ -103,6 +108,9 @@ main, footer {
 	background-color: transparent !important;
 	outline: none;
 	border: 1px solid rgba(255,153,0,1.0) !important;
+}
+.indent-left {
+	padding-left: 10px;
 }
 .social-icon-container i {
 	color: rgba(229,137,0,0.6);
@@ -127,6 +135,9 @@ main, footer {
 .white {
 	color: white !important;
 }
+.white:hover, .white:active, .white:visited {
+	color: white !important;
+}
 
 
 /* ----------------
@@ -143,9 +154,15 @@ main, footer {
 
 .answer {
 	font-size: 18px;
-	indent: 10px;
 	color: $gray-text;
 	padding-left: 25px;
+}
+
+.unstyled-questin {
+
+}
+.unstyled-answer {
+	display: none;
 }
 
 /* DROP ARROW TOGGLE */
