@@ -166,6 +166,8 @@ form {
 		margin: none !important;
 		border: 1px solid $orange;
 		border-radius: 0px;
+		position: relative;
+		top: 5px;
 	}
 	.form-checkbox:active, .form-checkbox:focus, .form-checkbox:checked {
 		// color
