@@ -60,7 +60,6 @@ main, footer {
 			text-align: center;
 		}
 	}
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -96,7 +95,9 @@ main, footer {
 	outline: none;
 	border: 1px solid rgba(255,153,0,1.0) !important;
 }
-
+.no-wrap {
+	white-space: nowrap;
+}
 .social-icon-container i {
 	color: rgba(229,137,0,0.6);
 	font-size: 26px;
@@ -163,18 +164,9 @@ form {
 		border-top: 0;
 		border-left: 0;
 		border-right: 0;
+		outline: none;
 	}
-	textarea {
-		border-radius: 0px;
-		width: 100%;
-		border: 1px solid #eee;
-		height: 70px;
-		overflow: scroll;
-	}
-	textarea:focus, :active {
-		border: 1px solid $orange;
-	}
-	input:active, :focus {
+	input:active, input:focus, input:hover, input:active {
 		border-radius: 0px;
 		width: 100%;
 		border-top: 0;
@@ -183,6 +175,16 @@ form {
 		border-bottom: 1px solid $orange;
 		box-shadow: none;
 	} 
+	textarea {
+		border-radius: 0px;
+		width: 100%;
+		border: 1px solid #eee;
+		height: 70px;
+		overflow: scroll;
+	}
+	textarea:focus, textarea:active {
+		border: 1px solid $orange;
+	}
 	.submit-button {
 		width: 250px;
 		color: white;

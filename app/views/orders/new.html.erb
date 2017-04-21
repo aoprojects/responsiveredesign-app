@@ -2,7 +2,7 @@
 <!-- begin order form area for responsive design work -->
 <div class="header-padding-center">
 	<h3><span class="orange">Order a responsive design right now.</span></h3>
-	<h4>No&nbsp;waiting. No&nbsp;phone&nbsp;calls&nbsp;necessary.</h4>
+	<h4>No&nbsp;waiting&nbsp;for&nbsp;us to&nbsp;call&nbsp;you&nbsp;back.</h4>
 	<h4>(Pay&nbsp;later.)</h4>
 	<!-- <p class="text-center">(Pay later.)</p> -->
 </div>
@@ -33,8 +33,10 @@
 		</div><!-- end .form-group -->
 
 		<div class="form-group">
-			<%= order.label :Do_you_prefer_texting_vs_phone_calls? %>&nbsp;&nbsp;
-			<%= order.check_box :text_preferred %>
+			<span class="no-wrap">
+				<%= order.label :Do_you_prefer_texting_vs_phone_calls? %>&nbsp;&nbsp;Yes&nbsp;
+				<%= order.check_box :text_preferred %>
+			</span><!-- end .no-wrap -->
 		</div><!-- end .form-group -->
 
 		<div class="form-group">
@@ -58,14 +60,18 @@
 		</div><!-- end .form-group -->
 
 		<div class="form-check">	
-			<%= order.label :I_prefer_to_do_this_entire_project_without_phone_calls, class: "" %>&nbsp;&nbsp;
-			<%= order.check_box :preference_no_call, class: "form-control" %>
+			<span class="no-wrap">
+				<%= order.label :I_prefer_to_do_this_entire_project_without_phone_calls %>
+				&nbsp;&nbsp;
+				<%= order.check_box :preference_no_call %>
+			</span><!-- end .no-wrap -->	
 		</div><!-- end .form-group -->
 
 
 		<div class="hidden">
 			<!-- todo recaptcha here -->
 		</div>
+		<br>
 
 		<div class="submit-button-div" >
 			<%= order.submit "Order The Work", class: "btn btn-success btn-lg submit-button" %>
