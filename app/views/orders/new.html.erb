@@ -32,10 +32,10 @@
 			<%= order.text_field :contact_phone_number, class: "text-input" %>
 		</div><!-- end .form-group -->
 
-		<div class="form-group">
+		<div>
 			<span class="no-wrap">
 				<%= order.label :Do_you_prefer_texting_vs_phone_calls? %>&nbsp;&nbsp;Yes&nbsp;
-				<%= order.check_box :text_preferred %>
+				<%= order.check_box :text_preferred, class: "form-checkbox" %>
 			</span><!-- end .no-wrap -->
 		</div><!-- end .form-group -->
 
@@ -59,12 +59,17 @@
 			<%= order.text_area :additional_comments, class: "text-input" %>
 		</div><!-- end .form-group -->
 
-		<div class="form-check">	
-			<span class="no-wrap">
-				<%= order.label :I_prefer_to_do_this_entire_project_without_phone_calls %>
+		<div class="no-border">	
+			<span class="no-wrap no-border">
+				
+				<span class="no-border">
+					<%= order.label :I_prefer_to_do_this_entire_project_without_phone_calls %>
+				</span>
 				&nbsp;&nbsp;
-				<%= order.check_box :preference_no_call %>
-			</span><!-- end .no-wrap -->	
+				
+				<%= order.check_box :preference_no_call, class: "form-checkbox" %>
+			
+			</span><!-- end .no-wrap .no-border -->	
 		</div><!-- end .form-group -->
 
 
@@ -73,7 +78,7 @@
 		</div>
 		<br>
 
-		<div class="submit-button-div" >
+		<div class="submit-button-div no-border" >
 			<%= order.submit "Order The Work", class: "btn btn-success btn-lg submit-button" %>
 		</div>
 

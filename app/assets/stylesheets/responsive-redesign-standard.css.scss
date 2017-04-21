@@ -158,10 +158,24 @@ form {
 	margin: 0 auto;
 	width: 100%;
 	font-size: 16px;
-	.form-group:active {
+	// put .form-checkbox on all checkboxes
+	input.form-checkbox {
+		height: 20px !important;
+		width: 20px !important;
+		padding: none;
+		margin: none !important;
+		border: 1px solid $orange;
+		border-radius: 0px;
+	}
+	.form-checkbox:active, .form-checkbox:focus, .form-checkbox:checked {
+		// color
+	}
+	.form-group:active, .no-border:active {
 		border-top: none !important;
 		border-left: none !important;
 		border-right: none !important;
+		border-bottom: none !important;
+		outline: none !important;
 	}
 	// put .form-select onto drop down selections
 	.form-select {
@@ -215,11 +229,13 @@ form {
 		background-color: $orange !important;
 		// border: 1px solid $dark-purple !important;
 	}
-	.submit-button:hover, :active, :focus, :visited {
+	.submit-button:hover, .submit-button:active, .submit-button:focus, .submit-button:visited {
 		background-color: white !important;
 		color: $orange !important;
 		transition: 0.2s ease;
 		border: 1px solid $orange !important;
+		outline: none !important;
+		box-shadow: none;
 	}
 	.submit-button-div {
 		text-align: center;
