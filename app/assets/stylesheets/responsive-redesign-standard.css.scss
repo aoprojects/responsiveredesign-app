@@ -54,6 +54,15 @@ main, footer {
 
 
 /* GENERAL - DEFAULT PAGE STYLES */
+
+@media only screen and (min-width: 500px) {
+	.no-wrap {
+		white-space: nowrap;
+	}
+	// only keeps text on the same line for larger than mobile screens
+}
+
+
 @media only screen and (max-width: 767px) {
 	main {
 		h1, h2 {
@@ -94,9 +103,6 @@ main, footer {
 	background-color: transparent !important;
 	outline: none;
 	border: 1px solid rgba(255,153,0,1.0) !important;
-}
-.no-wrap {
-	white-space: nowrap;
 }
 .social-icon-container i {
 	color: rgba(229,137,0,0.6);
