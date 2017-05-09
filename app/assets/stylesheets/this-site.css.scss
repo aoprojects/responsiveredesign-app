@@ -196,11 +196,15 @@ nav {
 .pure-white {
 	color: white !important;
 }
-.section-icon {
+.section-icon-div {
 	max-width: 100px;
 	width: 100px;
 	color: white;
+	margin: 0 auto;
 }
+.section-icon-size {
+	max-width: 150px;
+}/* control size of the icon itself */
 .text-far-right {
 	text-align: right;
 	position: relative;
