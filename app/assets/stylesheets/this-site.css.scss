@@ -151,6 +151,17 @@ main section {
 		background-color: rgba(63,67,64,1.0);
 		color: #eee;
 	}
+	.paragraph-text {
+		font-size: 18px;
+		font-family: Arial;
+		line-height: 1.4em;
+		max-width: 500px;
+		margin: 30px auto;
+		text-indent: 40px;
+		p {
+			padding: 10px;
+		}
+	}
 	ul li {
 		list-style: none;
 		padding-top: 10px;
