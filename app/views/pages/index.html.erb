@@ -161,12 +161,15 @@
                     </div>      
 
                     <h3>Manged by Entrepreneurs</h3>
-                    <p>We understand your business' goals, and we know how to help you <i>become the brand your customers are looking for.</i><!-- .orange --></p>
+                    <div class="paragraph-text">
 
-                    <p>We have personal experience in:<br>
-                        <span class="indent-left">Real Estate, Product Supply and Distribution, Theatrics and Performance, Design and Artistic Work, Scientific Research, Startup company culture and Entrepreneurship, Social good business models, and more.</span>
-                    </p>
-                      
+                        <p>We understand your business' goals, and we know how to help you <i>become the brand your customers are looking for.</i><!-- .orange -->
+                        </p>
+
+                        <p>We have personal experience in:<br>
+                            <span class="indent-left">Real Estate, Product Supply and Distribution, Theatrics and Performance, Design and Artistic Work, Scientific Research, Startup company culture and Entrepreneurship, Social good business models, and more.</span>
+                        </p>
+                    </div><!-- end .paragraph-text -->
                 </li><!-- end li.col -->    
                 <li class="col-md-4 col-sm-12 col-xs-12">
                     
@@ -176,8 +179,10 @@
                     </div>
 
                     <h3>We demand qualty</h3>
-                    <p>We are all in business to do good work. <br>
+                    <div class="paragraph-text">
+                        <p>We are all in business to do good work. <br>
                         <i>Se let's only do good work.</i></p>
+                    </div><!-- end .paragraph-text -->
 
                 </li><!-- end li.col -->
                 <li class="col-md-4 col-sm-12 col-xs-12">
@@ -188,11 +193,48 @@
                     </div>
 
                     <h3>We work quickly</h3>
-                    <p>We will quickly lower your bounce rate and help speed up your customer acquisition process.</p>
-                    <p>Your site can be fully responsive, functional, and live in a week or less, often for a flat fee of $3,500, which is half the price of the market average.</p>
+                    <div class="paragraph-text">
+                        <p>We will quickly lower your bounce rate and help speed up your customer acquisition process.</p>
+                        <p>Your site can be fully responsive, functional, and live in a week or less, often for a flat fee of $3,500, which is half the price of the market average.</p>
+                    </div><!-- end .paragraph-text -->
                 </li>
             </ul><!-- end ul.row -->
         </section>
+        <section id="pricing">
+            <h2 class="wow animated delay-11s fadeIn">Compare Our Pricing</h1>
+                <div class="row text-center">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="paragraph-text">
+                            <p>comparsion 1</p>
+                            <p>PROJECT TYPE</p>
+                            <p>Their price: __</p>
+                            <p>Our price: ___</p>
+                        </div><!-- end .paragraph-text -->
+                    </div>
+                    <div class="col-md-4 col-md-4 col-xs-12">
+                         <div class="paragraph-text">
+                            <p>comparsion 2</p>
+                            <p>PROJECT TYPE</p>
+                            <p>Their price: __</p>
+                            <p>Our price: ___</p>
+                        </div><!-- end .paragraph-text -->
+
+                    </div>
+                    <div class="col-md-4 col-col-md-6 col-xs-12">
+                        <div class="paragraph-text">
+                            <p>comparsion 3</p>
+                            <p>PROJECT TYPE</p>
+                            <p>Their price: __</p>
+                            <p>Our price: ___</p>
+                        </div><!-- end .paragraph-text -->
+
+                    </div>
+                </div>
+                <!-- todo link to how we keep costs down -->
+            <div class="text-center">
+                <%= link_to "Order A Project Now", new_order_path, class: "btn btn-default btn-lg white" %> 
+            </div>
+        </section><!-- end how we compare -->
         <section>
             <h2 class="wow animated delay-11s fadeIn">How we keep the prices down</h2>
 
@@ -210,27 +252,6 @@
             </p>
             <p class="text-center">It's fast.&nbsp;&nbsp;If you contact us on Monday, your new site can be uploaded by Friday.</p>
         </section>
-
-        <section id="pricing">
-            <h2 class="wow animated delay-11s fadeIn">Our Pricing  (How We Compare)</h1>
-                <ul class="row text-center">
-                    <li class="col-md-4 col-sm-4 col-xs-12">
-                        <p>comparsions</p>
-
-                    </li>
-                    <li class="col-md-4 col-md-4 col-xs-12">
-                        <p>comparison 2</p>
-
-                    </li>
-                    <li class="col-md-4 col-col-md-6 col-xs-12">
-                        <p>comparison 3</p>
-
-                    </li>
-                </ul>
-            <div class="text-center">
-                <%= link_to "Order A Project Now", new_order_path, class: "btn btn-default btn-lg white" %> 
-            </div>
-        </section><!-- end how we compare -->
        <!--  <section id="portfolio">
             <h2>Examples of Our Work</h2>
                 <div class="row">
