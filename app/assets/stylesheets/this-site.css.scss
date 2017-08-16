@@ -72,7 +72,7 @@ body {
 }
 #center-main-section {
 	display: hidden;
-	text-align: center;
+	text-align: left;
 	padding: 25px 25px 40px 25px;
 }/*default for all screen sizes*/
 .center-of-page {
@@ -237,6 +237,11 @@ nav {
 
 .un-button {
 	color: black;
+}
+#website-standards {
+	font-size: 18px;
+	font-family: Arial;
+
 }
 
 

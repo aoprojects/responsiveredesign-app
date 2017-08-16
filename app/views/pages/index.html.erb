@@ -3,7 +3,7 @@
 
 
         <!-- todo unhide this section -->
-        <div id="center-main-section">   
+        <div id="center-main-section" class="text-left">   
          <!-- todo I think the delays aren't installed yet js -->
             <!-- <h1 class="animated delay-05s fadeInRight" alt="Responsive Design">Responsive Redesign</h1> -->
             <!-- todo why isn't h2 fading? -->
@@ -15,28 +15,26 @@
 
 
 
-            <h3 class="animated delay-07s fadeInLeft">Our Vision:<br>
-                A beautiful internet on any device.
+            <h3 class="animated delay-07s fadeInLeft align-left">THE INTERNET SHOULD BE BEAUTIFUL EVERYWHERE
             </h3>
-
-
-            <h3 class="hidden animated delay-07s fadeInLeft">It's&nbsp;<%= Time.current.year %>.<br> Every website should be mobile responsive. And&nbsp;gorgeous.
-            </h3>
+        
             <br>
-
-            <button class="btn btn-default btn-lg delaty-09s animated fadeIn"><%= link_to "Add My Site To The Cause", new_order_path %></button>
-            <br>
-            <p>What we think a beautiful website is in <%= Time.current.year %>:
-                <ul>
-                    <li>mobile responsive</li>
-                    <li>gramatically correct</li>
-                    <li>the user understands what to do on it</li>
-                    <li>it empowers people to join your cause</li>
-                    <li>the code is well written</li>
-                    <li>the code is reuseable</li>
-                    <li>it functions as requested</li>
-                </ul>
-            </p>
+            <div class="row">
+                <div class="col-md-6 wow animated delay-11s fadeInLeft" id="website-standards">
+                    <p>To us, that means your website is
+                        <ul>
+                            <li>Mobile responsive</li>
+                            <li>Gramatically correct</li>
+                            <li>Easy to use, as you want it used</li>
+                            <li>Doing some good sales work for you</li>
+                            <li>Based in modern and reusable code</li>
+                        </ul>
+                    </p>
+                </div><!-- end .com -->
+                <div class="col-md-6">
+                    <button class="btn btn-default btn-lg delaty-09s animated fadeIn"><%= link_to "Order a Website Redesign Now", new_order_path %></button>
+                </div><!-- end .col -->
+            </div>
 
         </div><!-- end #center-main-section -->
 
