@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   get 'orders' => 'orders#index'
   get 'new_order' => 'orders#new'
   get 'order' => 'order#show'
+  get 'why_us' => 'pages#why_us'
+  get 'pricing' => 'pages#pricing'
+  get 'the_process' => 'pages#the_process'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

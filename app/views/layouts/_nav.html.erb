@@ -16,15 +16,11 @@
     </div>
     <div id="nav_elements">
         <ul>
-            <li alt="The Importance of Responsive Design"><a href="#why-responsive">Why&nbsp;Do&nbsp;I&nbsp;Need&nbsp;This?</a></li>
-            <li alt="Do It Yourself - Responsive Redesign"><a href="#your-options">Your&nbsp;Options</a></li>
-            <li><a href="#why-us">Why&nbsp;Us</a></li>
-            <li alt="Cost"><a href="#pricing">Pricing</a></li>
-
-            <!-- <li alt="Portfolio"><a href="#portfolio">Examples</a></li> -->
-            <li><a href="#testimonials">Testimonials</a></li>
-            <!-- <li alt="Mailing List"><button class="un-button white" data-toggle="modal" data-target="#newsletterModal">Newsletter&nbsp;&amp;&nbsp;Social</button></li> -->
-            <li alt="Take Action"><%= link_to 'Order a Design Now!', new_order_path, class: "btn btn-sm btn-success" %></li>
+            <li alt="The Importance of Responsive Design"><%= link_to "Why?", root_path %></li>
+            <li alt="Our Work Process"><%= link_to "How?", the_process_path %></li>
+            <li alt="Why Us"><%= link_to "Why us?", why_us_path %></li>
+            <li alt="Pricing"><%= link_to "How much?", pricing_path %></li>
+            <li alt="Order A Design"><%= link_to 'Order a Design Now!', new_order_path, class: "btn btn-sm btn-success" %></li>
         </ul>
     </div>
 </nav>

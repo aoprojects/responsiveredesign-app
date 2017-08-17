@@ -11,4 +11,13 @@ class PagesController < ApplicationController
   def privacy_and_terms
   end
 
+  def why_us
+  end
+
+  def the_process
+  end
+
+  def pricing
+  end
+
 end

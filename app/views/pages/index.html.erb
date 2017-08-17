@@ -2,325 +2,92 @@
 <% content_for(:subtitle) do %>All About Responsive Redesign<% end %>
 
 
-        <!-- todo unhide this section -->
-        <div id="center-main-section" class="text-left">   
-         <!-- todo I think the delays aren't installed yet js -->
-            <!-- <h1 class="animated delay-05s fadeInRight" alt="Responsive Design">Responsive Redesign</h1> -->
-            <!-- todo why isn't h2 fading? -->
-           <!--  <h2 class="animated delay-07s fedeInRight">Your existing site design, <br>modernized,<br> and made mobile responsive in a week or less.</h2> -->
+<!-- todo unhide this section -->
+<div id="center-main-section" class="text-left">   
+ <!-- todo I think the delays aren't installed yet js -->
+    <!-- <h1 class="animated delay-05s fadeInRight" alt="Responsive Design">Responsive Redesign</h1> -->
+    <!-- todo why isn't h2 fading? -->
+   <!--  <h2 class="animated delay-07s fedeInRight">Your existing site design, <br>modernized,<br> and made mobile responsive in a week or less.</h2> -->
 <!-- 
-            <p class="text-center">
-                <a href="#">Download the PDF</a>
-            </p> -->
+    <p class="text-center">
+        <a href="#">Download the PDF</a>
+    </p> -->
 
 
 
-            <h3 class="animated delay-07s fadeInLeft align-left">THE INTERNET SHOULD BE BEAUTIFUL EVERYWHERE
-            </h3>
-        
-            <br>
-            <div class="row">
-                <div class="col-md-6 wow animated delay-11s fadeInLeft" id="website-standards">
-                    <p>To us, that means your website is
-                        <ul>
-                            <li>Mobile responsive</li>
-                            <li>Gramatically correct</li>
-                            <li>Easy to use, as you want it used</li>
-                            <li>Doing some good sales work for you</li>
-                            <li>Based in modern and reusable code</li>
-                        </ul>
-                    </p>
-                </div><!-- end .com -->
-                <div class="col-md-6">
-                    <button class="btn btn-default btn-lg delaty-09s animated fadeIn"><%= link_to "Order a Website Redesign Now", new_order_path %></button>
-                </div><!-- end .col -->
-            </div>
+    <h3 class="animated delay-07s fadeInLeft align-left">THE INTERNET SHOULD BE BEAUTIFUL EVERYWHERE
+    </h3>
 
-        </div><!-- end #center-main-section -->
-
-        <!-- begin left side of the site -->
-        <!-- below is for upeer left section -->
-        <section id="why-responsive">
-            <h2 class="wow animated delay-11s fadeIn">Why is mobile responsive so important?</h2>
-
-            <div class="row">
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    
-                    <div class="section-icon-div">
-                        <%= image_tag('flaticons/icon-throw-away-money-6pt-orange.png', class: "section-icon-size") %>
-                        <!-- Icon made custom by Virgo Ventures LLC -->
-                    </div>
-                  
-                    <h3>Static Websites Damage Sales</h3>
-                    <div class="paragraph-text">
-                        <p>55% <br>of all e-commerce interactions taking place on smartphones</p>
-                        <p>69% <br>of customers prefer to order online than over the phone </p>
-                        <p>50% <br> of customers actually leave a site when they see it's not mobile responsive</p>
-                        <p>1&nbsp;/&nbsp;3 <br>customers abandon a purchase due to the annoyance of static sites</p>
-                        
-                    
-                    </div><!-- end .paragraph-text -->
-
-                </div><!-- end .col -->
-                <div class="col-md-6 col-sm-12 col-xs-12">
-
-                    <div class="section-icon-div">
-                        <%= image_tag('flaticons/icon-responsive-site-benefits-orange.png', class: "section-icon-size") %>
-                        <!-- Icon made custom by Virgo Ventures LLC -->
-                    </div>                    
-                    <h3>Benefits Of Responsive Websites</h3>
-                    <div class="paragraph-text">
-
-                        <p>Reduce your <b>bounce rate</b> to less than 20%</p>
-
-                        <p>Users see you as a modern company.</p>
-
-                        <p>Customers can interact with you impulsively, wherever they are.</p>
-
-                    </div><!-- end .paragraph-text -->
-                </div><!-- end .col -->
-            </div><!-- end .row -->
-
-        </section><!-- end #why-responsive -->
-
-        <!-- begin upper right section -->
-        <section id="your-options">
-            <h2 class="wow animated delay-11s fadeIn">Your options - How to update your site</h2>
-         
-                <div class="row">
-
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="section-icon-div">
-                            <%= image_tag('flaticons/repair-tools-cross.png', class: 'section-icon-size') %>
-                            <!-- Icon made by Freepik from www.flaticon.com  -->
-                        </div>
-                        <h3>Do it yourself</h3> 
-                        <div class="paragraph-text">
-
-                            <p>You can use a template engine.</p>
-
-                            <p>They're great if you have time to edit, some money per feature (like custom domains and calendar booking system subscriptions).</p>
-
-                            <p>You have to spend time taking down the template styles, figure out how your styles can fit in with that template's needs, and maybe learn something about HTML so you don't end up designing the footer to act like the main or breaking their JavaScript.</p>
-
-                            <p>They also often hiden their back end code, which means you'll have to hire an expensive design agency ($5,000 minimums are common) to hack around the template's limitations.</p>
-                        </div>
-
-                    </div><!-- end col -->
-
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-
-                        <div class="section-icon-div">
-                            <%= image_tag('flaticons/tent.png', class: 'section-icon-size') %>
-                            <!-- Icon made by Freepik from www.flaticon.com  -->
-                        </div>                        
-                        <h3>Hire a super cheap offshore design agency</h3>
-                        <div class="paragraph-text">   
-
-                            <p>This is great if you want just text edited, or a couple of colors changed.</p>
-
-                            <p>We wouldn't recommend this option if you want to get a good job done quickly.<p>
-
-                            <p>Political correctness aside, <span class="orange">American standards are just different.</span></p>
-
-                            <p class="orange unstyled-question">How do many offshore agencies get it just a bit wrong? <%= render 'layouts/drop_arrows' %></p>
-
-                            <span class="unstyled-answer">
-                                <p>What we've seen, and why we started this company:</p>
-                                <ul>
-                                    <li>Offer an older design style, by using antiquated HTML tags, or by writing their styling inline instead of in a stylesheet (much harder to edit later), or by using tables to create columns instead of floating rows that truly respond to the width of your browser</li>
-                                    <li>Strange word use, like "telephony" instead of "Telephone", that makes its way into your site.</li>
-                                    <li>Development of sites that don't interact with the customer very much. No special touches, like the use of CSS animations to make the elements of your site slide in or out with scrolling. 
-                                
-                                    <p><span class="orange">Tip:</span> It's movement makes a site modern, and we put this into every site we can.</li>
-                                </ul>
-                            </span>
-                        </div><!-- end .paragraph-text -->
-                    </div><!-- end .col -->
-
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="section-icon-div">
-                            <%= image_tag('flaticons/money-bag.png', class: 'section-icon-size') %>
-                            <!-- Icon made by Gregor Cresnar from www.flaticon.com  -->
-                        </div>
-                        <h3>Hire an expensive, full-service agency that's been around for a while</h3>
-                        <div class="paragraph-text">
-                           
-                            <p>They'll get the job done and more.  For $8,000 - $20,000 USD at least. <br>
-                            <p>They'll also do time-sucking things like make wireframes, design a new color pallete, redesign your logo, rebrand your social sites, conduct user focus groups, and do A/B testing with keyword research.</p>
-                        </div><!-- end .paragraph-text -->
-                    </div><!-- end .col -->
-
-            </div><!-- end .row -->
-
-            <div class="row border-top">
-
-                <div class="col-xs-12 text-center">Or...<br><%= link_to "Hire Responsive Redesign", new_order_path, class: "btn btn-default btn-lg" %>
-                    <br><br>
-                    <div class="paragraph-text">
-                        <p>Your new, custom, mobile responsive site can be uploaded live to your custom domain, with your custom features, in a week or less. Cheap.</p>
-                    </div>
-                </div>
-
-            </div><!-- end .row -->
-            </div><!-- your options -->
-
-        </section>
-    
-        <section id="why-us">
-            <h2 class="wow animated delay-11s fadeIn">What’s special about ResponsiveRedesign.io</h2>
-            <ul class="row">
-                <li class="col-md-4 col-sm-12 col-xs-12">
-
-                    <div class="section-icon-div">
-                        <%= image_tag('flaticons/icon-money-idea-orange.png', class: 'section-icon-size') %>
-                        <!-- Icon made by Freepik from www.flaticon.com and customized by Virgo Ventures LLC  -->
-                    </div>      
-
-                    <h3>Manged by Entrepreneurs</h3>
-                    <div class="paragraph-text">
-
-                        <p>We understand your business' goals, and we know how to help you <i>become the brand your customers are looking for.</i><!-- .orange -->
-                        </p>
-
-                        <p>We have personal experience in:<br>
-                            <span class="indent-left">Real Estate, Product Supply and Distribution, Theatrics and Performance, Design and Artistic Work, Scientific Research, Startup company culture and Entrepreneurship, Social good business models, and more.</span>
-                        </p>
-                    </div><!-- end .paragraph-text -->
-                </li><!-- end li.col -->    
-                <li class="col-md-4 col-sm-12 col-xs-12">
-                    
-                    <div class="section-icon-div">
-                        <%= image_tag('flaticons/icon-checklist-6pt-orange.png', class: 'section-icon-size') %>
-                        <!-- Icon made by Freepik from www.flaticon.com  -->
-                    </div>
-
-                    <h3>We demand qualty</h3>
-                    <div class="paragraph-text">
-                        <p>We are all in business to do good work. <br>
-                        <i>Se let's only do good work.</i></p>
-                    </div><!-- end .paragraph-text -->
-
-                </li><!-- end li.col -->
-                <li class="col-md-4 col-sm-12 col-xs-12">
-
-                    <div class="section-icon-div">
-                        <%= image_tag('flaticons/icon-quickly-6pt-orange.png', class: 'section-icon-size') %>
-                        <!-- Icon made custom by Virgo Ventures LLC -->
-                    </div>
-
-                    <h3>We work quickly</h3>
-                    <div class="paragraph-text">
-                        <p>We will quickly lower your bounce rate and help speed up your customer acquisition process.</p>
-                        <p>Your site can be fully responsive, functional, and live in a week or less, often for a flat fee of $3,500, which is half the price of the market average.</p>
-                    </div><!-- end .paragraph-text -->
-                </li>
-            </ul><!-- end ul.row -->
-        </section>
-        <section id="pricing">
-            <h2 class="wow animated delay-11s fadeIn">Compare Our Pricing</h1>
-                <div class="row text-center">
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="paragraph-text">
-                            <p>comparsion 1</p>
-                            <p>PROJECT TYPE</p>
-                            <p>Their price: __</p>
-                            <p>Our price: ___</p>
-                        </div><!-- end .paragraph-text -->
-                    </div>
-                    <div class="col-md-4 col-md-4 col-xs-12">
-                         <div class="paragraph-text">
-                            <p>comparsion 2</p>
-                            <p>PROJECT TYPE</p>
-                            <p>Their price: __</p>
-                            <p>Our price: ___</p>
-                        </div><!-- end .paragraph-text -->
-
-                    </div>
-                    <div class="col-md-4 col-col-md-6 col-xs-12">
-                        <div class="paragraph-text">
-                            <p>comparsion 3</p>
-                            <p>PROJECT TYPE</p>
-                            <p>Their price: __</p>
-                            <p>Our price: ___</p>
-                        </div><!-- end .paragraph-text -->
-
-                    </div>
-                </div>
-                <!-- todo link to how we keep costs down -->
-            <div class="text-center">
-                <%= link_to "Order A Project Now", new_order_path, class: "btn btn-default btn-lg white" %> 
-            </div>
-        </section><!-- end how we compare -->
-        <section>
-            <h2 class="wow animated delay-11s fadeIn">How we keep the prices down</h2>
-
-            <p>Unless you ask us to, we don't do:
+    <br>
+    <div class="row">
+        <div class="col-md-6 wow animated delay-11s fadeInLeft" id="website-standards">
+            <p>To us, that means your website is
                 <ul>
-                    <li>drawn out sales pitches (to you)</li>
-                    <li>wireframes</li>
-                    <li>user focus groups</li>
-                    <li>full brand redesign</li>
-                    <li>exensive keyword research</li>
-                    <li>A/B Testing</li>
-                    <li>social media management</li>
-                    <li>content generation</li>
+                    <li>Mobile responsive</li>
+                    <li>Gramatically correct</li>
+                    <li>Easy to use, as you want it used</li>
+                    <li>Doing some good sales work for you</li>
+                    <li>Based in modern and reusable code</li>
                 </ul>
             </p>
-            <p class="text-center">It's fast.&nbsp;&nbsp;If you contact us on Monday, your new site can be uploaded by Friday.</p>
-        </section>
-       <!--  <section id="portfolio">
-            <h2>Examples of Our Work</h2>
-                <div class="row">
-                    <div class="portfolio-item col-sm-4 col-xs-12">
-                        <h3>Law Firm Company Site</h3>
-                        <p>Before and after.</p>
-                        <img class="img-responsive" src="">
-                        <p class="site-details-preview"></p>
-                        <div class="text-center">
-                            <button class="btn btn-default text-center site-more-info">Project Details</button>                      
-                        </div>
-                    </div>                
-                    <div class="portfolio-item col-sm-4 col-xs-12">
-                        <h3>Custom Fitness Equipment</h3>
-                        <p>Before and After (add before banner with 0.7 opacity to upper left of all before)</p>
-                        <img class="img-responsive" src="">
-                        <p class="site-details-preview"></p>  
-                        <div class="text-center">
-                            <button class="btn btn-default text-center site-more-info">Project Details</button>                      
-                        </div>
-                    </div>                
-                    <div class="portfolio-item col-sm-4 col-xs-12">
-                        <h3>Giles Marini - About the Actor</h3>
-                        <p>Before and after.</p>
-                        <img class="img-responsive" src="">
-                        <p class="site-details-preview"></p>  
-                        <div class="text-center">
-                            <button class="btn btn-default text-center site-more-info">Project Details</button>                      
-                        </div>                      
-                    </div>
-                </div>
-        </section> --><!-- end examples section -->
-        <section id="testimonials">
-            <div class="testimonital-text">
+        </div><!-- end .com -->
+        <div class="col-md-6">
+            <button class="btn btn-default btn-lg delaty-09s animated fadeIn"><%= link_to "Order a Website Redesign Now", new_order_path %></button>
+        </div><!-- end .col -->
+    </div>
 
-                <div class="section-icon-div">
-                    <%= image_tag('flaticons/icon-customer-story.png', class: 'section-icon-size') %>
-                    <!-- Icon made by Eucalyp from www.flaticon.com  -->
-                </div>
+</div><!-- end #center-main-section -->
+
+<!-- begin left side of the site -->
+<!-- below is for upeer left section -->
+<section id="why-responsive">
+    <h2 class="wow animated delay-11s fadeIn">Why is mobile responsive so important?</h2>
+
+    <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+            
+            <div class="section-icon-div">
+                <%= image_tag('flaticons/icon-throw-away-money-6pt-orange.png', class: "section-icon-size") %>
+                <!-- Icon made custom by Virgo Ventures LLC -->
+            </div>
+          
+            <h3>Static Websites Damage Sales</h3>
+            <div class="paragraph-text">
+                <p>55% <br>of all e-commerce interactions taking place on smartphones</p>
+                <p>69% <br>of customers prefer to order online than over the phone </p>
+                <p>50% <br> of customers actually leave a site when they see it's not mobile responsive</p>
+                <p>1&nbsp;/&nbsp;3 <br>customers abandon a purchase due to the annoyance of static sites</p>
+                
+            
+            </div><!-- end .paragraph-text -->
+
+        </div><!-- end .col -->
+        <div class="col-md-6 col-sm-12 col-xs-12">
+
+            <div class="section-icon-div">
+                <%= image_tag('flaticons/icon-responsive-site-benefits-orange.png', class: "section-icon-size") %>
+                <!-- Icon made custom by Virgo Ventures LLC -->
+            </div>                    
+            <h3>Benefits Of Responsive Websites</h3>
+            <div class="paragraph-text">
+
+                <p>Reduce your <b>bounce rate</b> to less than 20%</p>
+
+                <p>Users see you as a modern company.</p>
+
+                <p>Customers can interact with you impulsively, wherever they are.</p>
+
+            </div><!-- end .paragraph-text -->
+        </div><!-- end .col -->
+    </div><!-- end .row -->
+
+</section><!-- end #why-responsive -->
+
+    
+       
+        
 
 
-                <h2 class="wow animated delay-11s fadeIn">Customer Reviews &amp; Testimonials</h2>
-                <blockquote>
-                    <p>As a busy small business owner, creating a new website is a dramatic undertaking without professional help. I was recommended to Virgo Ventures (DBA Responsive Redesign) by a business associate and was not only pleased with the organization and planning of our personal contact, Alison but also the simplified way in which she explained what she was doing based on our wish list and IT needs.</p>
-                    <p>Our transition from old site to new was practically seamless and we have already seen a huge boost in our website traffic as well as reduction in band width usage.</p> 
-                    <p>At the end, we now have an amazing responsive website that functions as good as it looks. I would highly recommend Virgo Ventures for any website creation or update work.</p>
-                    <small>Christopher Kelly, President / Owner <a href="http://www.gymstore.com/Default.asp", target: "none">Gym Store Inc.</a></small>
-                    </p>
-                </blockquote>
-            </div><!-- each testimonial quote -->
-
-        </section>
 
 
 
