@@ -9,6 +9,7 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
 
 $(document).ready(function() {
 	$( "#xs_hamburger" ).click(function() {
+		event.stopImmediatePropagation();
 		$( "#nav_elements" ).toggle( "fast" );
 		$(this).toggleClass("hamburger_clicked");
 		$("main").toggleClass("adjusted_down");
