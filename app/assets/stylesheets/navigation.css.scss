@@ -82,19 +82,21 @@ nav ul li a:hover {
 /* NAVIGATION styles for mobile and tablets below */
 @media only screen and (max-width: 991px) {
 	#nav_elements {
+		display: none;
 		width: 100vw;
 		position: fixed;
 		top: 100px;
 		left: 0px;
-		height: 170px;
+		height: 220px;
 		padding-bottom: 10px;
-		ul li {
-			background-color: $gray-background;
+		background-color: $gray-background;
+		li {
+			text-align: center;
+			padding: 5px;
 		}
 	}
 	main {
 		position: relative;
-		// top: 300px;
 	}
 	.adjusted_down {
 		position: relative;
