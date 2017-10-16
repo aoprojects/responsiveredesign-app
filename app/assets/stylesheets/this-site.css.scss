@@ -106,6 +106,10 @@ footer {
 		max-height: 150px;
 	}
 }
+.full-width-area {
+	padding: 40px;
+	width: 100vw;
+}
 @media only screen and (max-width: 991px) {
 	.footer-logo-image {
 		position: relative;
@@ -144,7 +148,7 @@ main #center-main-section h1 {
 	color: rgba(46,6,40,1.0);
 }
 main section {
-	padding: 50px;
+
 }
 .pages_index main {
 	section:nth-child(2n) {
@@ -169,7 +173,7 @@ main section {
 		}
 	}
 	.paragraph-fact {
-		font-size: 18px;
+		font-size: 22px;
 		font-family: comic-sans;
 	}
 	ul li {
@@ -202,6 +206,15 @@ nav {
 .gray {
 
 }
+.lighter-background-3 {
+	background-color: #4d4d4d;
+}/* medium dark color */
+.lighter-background-2 {
+	background-color: #707070;
+}
+.lighter-background-1 {
+
+}/* lighter color */
 .moderate-white {
 
 }
