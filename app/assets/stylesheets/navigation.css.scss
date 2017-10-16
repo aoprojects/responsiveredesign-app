@@ -13,7 +13,7 @@ nav {
 	width: 100%;
 	color: #jjj;
 	padding: 20px;
-	height: 100px;
+	min-height: 100px;
 	z-index: 20;
 }
 nav #brand-text {
@@ -53,22 +53,15 @@ nav #xs_hamburger:hover {
 }
 /* click this to drop down nav on tablet and mobile sizes */
 nav ul {
-
+	padding-top: 25px;
 }
 nav ul li {
-	text-decoration: none;
 	list-style: none;
-	padding: 3px;
-	width: 100%;
-	color: #eee;
-	text-align: center;
-
 }
 nav ul li:hover {
-	color: rgba(229,137,0,1.0);
 	text-decoration: none;
-	font-weight: bold;
 	cursor: pointer;
+	color: $orange;
 	/*background-color: black;*/
 }
 nav ul li a {
@@ -77,10 +70,7 @@ nav ul li a {
 }
 nav ul li a:hover {
 	text-decoration: none;
-	font-weight: bold;
-	color: rgba(229,137,0,1.0);
 }
-
 #xs_hamburger #hamburger_icon {
 
 }
@@ -89,17 +79,18 @@ nav ul li a:hover {
 	font-size: 13px;
 	color: white;
 }
-
 /* NAVIGATION styles for mobile and tablets below */
 @media only screen and (max-width: 991px) {
 	#nav_elements {
-		display: none;
-		width: 100%;
-		background-color: $gray-background;
+		width: 100vw;
 		position: fixed;
 		top: 100px;
 		left: 0px;
+		height: 170px;
 		padding-bottom: 10px;
+		ul li {
+			background-color: $gray-background;
+		}
 	}
 	main {
 		position: relative;
@@ -119,18 +110,14 @@ nav ul li a:hover {
 		position: fixed;
 		right: 0;
 		top:0;
-		width: 50vw;
 		// width is 70vw when 8 nav elements total, instead of 6
 		/*top: 0;*/
 	}
 	nav ul li {
-		width: 15vw;
 		float: left;
-		display: inline;
 		position: relative;
 		padding: 15px;
 		height: 30px;
-		top: 5px;
 	}
 	#xs_hamburger {
 		display: none;
