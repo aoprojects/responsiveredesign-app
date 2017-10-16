@@ -151,7 +151,7 @@ main section {
 		background-color: rgba(63,67,64,1.0);
 		color: #eee;
 	}
-	.paragraph-text {
+	.paragraph-circle {
 		font-size: 18px;
 		color: $gray-background;
 		font-family: Arial;
@@ -167,6 +167,10 @@ main section {
 		p {
 			padding: 10px;
 		}
+	}
+	.paragraph-fact {
+		font-size: 18px;
+		font-family: comic-sans;
 	}
 	ul li {
 		list-style: none;
