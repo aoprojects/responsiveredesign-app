@@ -152,8 +152,8 @@ main section {
 }
 .pages_index main {
 	section:nth-child(2n) {
-		background-color: rgba(63,67,64,1.0);
-		color: #eee;
+		// background-color: rgba(63,67,64,1.0);
+		// color: #eee;
 	}
 	.paragraph-circle {
 		font-size: 18px;
@@ -208,13 +208,13 @@ nav {
 }
 .lighter-background-3 {
 	background-color: #4d4d4d;
-}/* medium dark color */
+}/* lighter color */
 .lighter-background-2 {
 	background-color: #707070;
 }
 .lighter-background-1 {
-
-}/* lighter color */
+	background-color: #d4d4d4;
+}/* darker color */
 .moderate-white {
 
 }
