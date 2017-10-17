@@ -276,7 +276,16 @@ main section {
 #website-standards {
 	font-size: 20px;
 	font-family: 'Open Sans', sans-serif;
-
+}
+@media only screen and (min-width: 540px) and (max-width: 767px) {
+	#website-standards div p, ul {
+		margin-left: 20%;
+	}
+}
+@media only screen and (max-width: 539px) {
+	#website-standards div p, ul {
+		margin-left: 5%;
+	}
 }
 
 
