@@ -108,7 +108,8 @@ footer {
 }
 .full-width-area {
 	padding: 60px;
-	width: 100vw;
+	width: 100%;
+	margin: 0px;
 }
 @media only screen and (max-width: 991px) {
 	.footer-logo-image {
