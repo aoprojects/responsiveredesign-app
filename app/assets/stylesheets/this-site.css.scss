@@ -177,6 +177,12 @@ main section {
 		font-size: 22px;
 		font-family: comic-sans;
 	}
+	@media only screen and (min-width: 992px) {
+		.paragraph-fact {
+			margin-left: 20%;
+			margin-right: 20%;
+		}
+	}/* larger sizes */
 	ul li {
 		list-style: none;
 		padding-top: 10px;
