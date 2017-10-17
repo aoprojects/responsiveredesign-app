@@ -152,10 +152,6 @@ main section {
 
 }
 .pages_index main {
-	section:nth-child(2n) {
-		// background-color: rgba(63,67,64,1.0);
-		// color: #eee;
-	}
 	.paragraph-circle {
 		font-size: 18px;
 		color: $gray-background;
@@ -175,12 +171,13 @@ main section {
 	}
 	.paragraph-fact {
 		font-size: 22px;
-		font-family: comic-sans;
+		p {
+			text-align: center;
+		}
 	}
 	@media only screen and (min-width: 992px) {
 		.paragraph-fact {
-			margin-left: 20%;
-			margin-right: 20%;
+
 		}
 	}/* larger sizes */
 	ul li {
@@ -192,9 +189,6 @@ main section {
 		}
 	}
 }
-nav {
-	background-color: $gray-background;
-}
 
 @media only screen and (min-width: 768px) {
 	main section {
@@ -203,7 +197,7 @@ nav {
 	}/* handles grid layout of sections */
 } /*end media query for larger than xs devices*/
 
-/* COLOR CLASSES OF THIS SITE */
+/* COLOR AND FONT CLASSES OF THIS SITE */
 #nav_elements li a {
 	color: white !important;
 }
@@ -212,6 +206,12 @@ nav {
 }
 .gray {
 
+}
+.lean-left {
+	margin-right: 50%
+}
+.lean-right {
+	margin-left: 50%
 }
 .lighter-background-3 {
 	background-color: #4d4d4d;
@@ -223,7 +223,14 @@ nav {
 	background-color: #d4d4d4;
 }/* darker color */
 .moderate-white {
-
+	color: #ddd;
+}
+.near-white {
+	color: #eee;
+}
+.funky-font-styling {
+	font-family: 'Fascinate Inline', cursive;
+	font-size: 40px;
 }
 .portfolio-item {
 	padding: 40px;
