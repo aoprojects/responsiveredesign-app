@@ -84,26 +84,25 @@ main, footer {
 	background-color: $orange;
 	color: white;
 	outline: none;
-	border: 1px solid $orange;
+	border: 1px solid $orange !important;
 	border-radius: 1px !important;
 }
 .btn-default:hover {
-	color: $orange !important;
+	color: white !important;
 	transition: ease-in 0.1s;
 	border-radius: 0px;
-	background-color: white !important;
+	background-color: $orange !important;
 	outline: none;
 	border: 1px solid $orange;
+	a {color: white !important}
 }
 .btn-default:active, .btn-default:focus, .btn-default:target, .btn-default:visited {
-	background-color: white !important;
+	background-color: $orange !important;
 	outline: none;
 	border: 1px solid rgba(255,153,0,1.0) !important;
-	color: $orange !important;
+	color: white !important;
 	text-decoration: none;
-	a {
-		color: $orange;
-	}
+	a {color: white !important}
 }
 .border-default:hover, .border-default:active, .border-default:focus {
 	outline: none;
