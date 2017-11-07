@@ -89,7 +89,7 @@ nav ul li a:hover {
 		position: fixed;
 		top: 100px;
 		left: 0px;
-		height: 120px;
+		height: 160px;
 		padding-bottom: 10px;
 		background-color: $gray-background;
 		ul {
@@ -107,7 +107,7 @@ nav ul li a:hover {
 	}
 	.adjusted_down {
 		position: relative;
-		top: 200px;
+		top: 250px;
 		transition: ease 0.5s;
 	}
 }// to hide nav menu items on tablet and mobile sizes
