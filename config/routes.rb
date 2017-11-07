@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'why_us' => 'pages#why_us'
   get 'pricing' => 'pages#pricing'
   get 'the_process' => 'pages#the_process'
+  get 'contact_us' => "pages#contact_us"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
