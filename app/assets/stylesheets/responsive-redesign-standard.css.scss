@@ -60,8 +60,6 @@ main, footer {
 	}
 	// only keeps text on the same line for larger than mobile screens
 }
-
-
 @media only screen and (max-width: 767px) {
 	main {
 		h1, h2 {
@@ -69,44 +67,57 @@ main, footer {
 		}
 	}
 }
-
 @media only screen and (min-width: 768px) {
 
 }
 // for wider than sm and xs screens
-
 @media only screen and (max-width: 991px) {
 
 }// end media query for larger than tablet
-
 .border-top {
 	margin-top: 40px;
 	border-top: 1px solid $gray-text;
 }
 .btn-default {
-	/*background-color: transparent;*/
-	color: black !important;
 	font-style: Helvetica;
-	border: 1px solid rgba(255,153,0,1.0);
 	margin: 20px;
-	border-radius: 2px;
-}
-
-.btn-default:hover {
-	transform: scale(1.1);
-	color: black;
-	transition: ease-in 0.1s;
-	/*border: 2px solid black;*/
-	border-radius: 0px;
-	background-color: transparent;
+	background-color: $orange;
+	color: white;
 	outline: none;
-	border: 1px solid rgba(229,137,0,1.0); /* 1 darken of the site's theme pop color - orange*/
-	/*font-weight: 600;*/
+	border: 1px solid $orange;
+	border-radius: 1px !important;
+}
+.btn-default:hover {
+	color: $orange !important;
+	transition: ease-in 0.1s;
+	border-radius: 0px;
+	background-color: white !important;
+	outline: none;
+	border: 1px solid $orange;
 }
 .btn-default:active, .btn-default:focus, .btn-default:target, .btn-default:visited {
-	background-color: transparent !important;
+	background-color: white !important;
 	outline: none;
 	border: 1px solid rgba(255,153,0,1.0) !important;
+	color: $orange !important;
+	text-decoration: none;
+	a {
+		color: $orange;
+	}
+}
+.border-default:hover, .border-default:active, .border-default:focus {
+	outline: none;
+	border-radius: 0px;
+	background-color: rgba(255,153,0,0.8) !important;
+}
+.border-default:visited {
+	a {
+		color: $orange;
+	}
+}
+.image-center {
+	text-align: center;
+	padding: 10px;
 }
 .indent-left {
 	padding-left: 10px;
@@ -122,7 +133,6 @@ main, footer {
 .social-icon-container i:hover {
 	color: rgba(229,137,0,1.0);
 }
-
 .un-button {
 	background: transparent;
 	border: none;
