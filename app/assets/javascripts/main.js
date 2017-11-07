@@ -13,6 +13,7 @@ $(document).ready(function() {
 		$( "#nav_elements" ).toggle( "fast" );
 		$(this).toggleClass("hamburger_clicked");
 		$("main").toggleClass("adjusted_down");
+		$("footer").toggleClass("adjusted_down");
 	});
 	$(".question").click(function(event) {
 		event.stopImmediatePropagation();
