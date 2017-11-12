@@ -30,17 +30,12 @@ a:hover {
 	color: rgba(255,153,0,1.0) !important;
 }
 // for banner area - begin
-.background-image-section img {
-	max-height: 1500px;
-	max-width: 100vw;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	z-index: 5;
-}
-
-.atop-banner {
-	z-index: 6;
+.banner-area {
+	min-height: 250px;
+	max-height: 500px;
+	background-image: image-url('pexels-photo-546157.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 // banner area - end
 
