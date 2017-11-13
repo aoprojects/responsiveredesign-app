@@ -175,6 +175,12 @@ main section {
 		list-style-type: none;
 	}
 }
+.pages_learn {
+	ul {
+		list-style-type: circle;
+		text-align: left;
+	}
+}
 
 @media only screen and (min-width: 768px) {
 	main section {
