@@ -3,12 +3,17 @@
 // below is written custom for this site
 
 $(document).ready(function() {
-	$( "#xs_hamburger" ).click(function() {
-		$( "#nav_elements" ).toggle( "fast" );
-		$(this).toggleClass("hamburger_clicked");
+  console.log('adding handler');
+  var $xs_hamburger = $( "#xs_hamburger" );
+  var $nav_elements = $( "#nav_elements" );
+  $(document).on('click', '#xs_hamburger', function() {
+  	console.log('clicked');
+    $("#nav_elements").toggle( "fast" );
+		$xs_hamburger.toggleClass("hamburger_clicked");
 		$("main").toggleClass("adjusted_down");
 		$("footer").toggleClass("adjusted_down");
 	});
+});
 	// $(".question").click(function(event) {
 	// 	event.stopImmediatePropagation();
 	// 	$(this).next(".answer").toggle("fast");
@@ -22,6 +27,6 @@ $(document).ready(function() {
 	// 	$(this).find("span.before-toggle").toggle();
 	// 	$(this).find("span.after-toggle").toggle();
 	// });
-});
+
 
 // css("display:inline")
