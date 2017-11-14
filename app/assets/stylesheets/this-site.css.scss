@@ -180,6 +180,9 @@ main section {
 		list-style-type: circle;
 		text-align: left;
 	}
+	main ul li {
+		margin: 4px;
+	}
 }
 .p-tagline {
 	position: relative;
@@ -284,7 +287,17 @@ main section {
 	font-size: 20px;
 	font-family: 'Open Sans', sans-serif;
 }
+@media only screen and (max-width: 767px) {
+	.pages_learn {
+		h3 {
+			text-align: left;
+			position: relative;
+			left: -10px;
+		}
+	}
+}
 @media only screen and (min-width: 540px) and (max-width: 767px) {
+
 	#website-standards div p {
 		margin-left: 20%;
 	}
