@@ -29,17 +29,13 @@ a:hover {
 	text-decoration: none !important;
 	color: rgba(255,153,0,1.0) !important;
 }
-// for banner area - begin
 .banner-area {
 	overflow: hidden;
 	height: 320px;
-	background: #eee;
-	// background-image: image-url('pexels-photo-546157.jpg');
-	// background-size: 100%;
-	// background-repeat: no-repeat;
+	/*background: #eee;*/
+	background-image: image-url('topography.png');
+	box-shadow: 0 0 5px #dddddd;
 }
-// banner area - end
-
 body {
 	font-family: Arial;
 }
@@ -141,7 +137,7 @@ main, footer {
 .opaque-overlay {
 	width: 100%;
 	height: 100%;
-	background-color: rgba(255,255,255,0.6);
+	/*background-color: rgba(255,255,255,0.6);*/
 	.inner-container {
 		padding: 50px 30px 10px 30px;
 	}
