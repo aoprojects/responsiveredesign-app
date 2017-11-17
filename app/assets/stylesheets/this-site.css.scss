@@ -22,7 +22,22 @@ a {
 a:hover {
 	color: $orange !important;
 }
-
+/*banner section start*/
+#banner-icon {
+	/*transition: all 0.5s ease-in-out;*/
+}
+#banner-text {
+	/*transition: all 0.5s ease-in-out;*/
+}
+@media only scren and (min-width: 768px) {
+	#banner-icon {
+/* todo move the icons to be beside each other on larger screens*/
+	}
+	#banner-text {
+/* todo move the icons to be beside each other on larger screens*/
+	}
+}
+/*banner section end*/
 body {
   /*  margin-top: 50px; *//* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     background-color: white; /*aka rgb(71,71,71)*/
@@ -32,6 +47,7 @@ body {
 	padding: 0;
     /*display: flex;*/
 }
+
 .black-text {
 	color: black !important;
 }
