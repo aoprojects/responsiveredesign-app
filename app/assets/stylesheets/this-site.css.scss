@@ -252,6 +252,24 @@ main section {
 	font-family: 'Indie Flower', cursive;
 	font-size: 40px;
 }
+.pages_portfolio {
+	ol li {
+		/*color: $orange;*/
+	}
+	h3 {
+		color: $orange;
+		text-align: left;
+		margin-left: 20px;
+	}
+	.portfolio-image-section {
+		height: 300px;
+	}
+}
+@media only screen and (min-width: 767px) {
+	.pages_portfolio p {
+		margin-left: 40px;
+	}
+}
 .portfolio-item {
 	padding: 40px;
 	border: 1px solid white;
