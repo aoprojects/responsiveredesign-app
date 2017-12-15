@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'contact_us' => 'pages#contact_us'
   get 'details' => 'pages#details'
   get 'learn' => 'pages#learn'
+  get 'portfolio' => 'pages#portfolio'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
