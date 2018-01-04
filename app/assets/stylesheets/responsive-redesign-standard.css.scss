@@ -99,7 +99,7 @@ main, footer {
 	font-style: Helvetica;
 	margin: 20px;
 	background-color: $orange;
-	color: white;
+	color: white !important;
 	outline: none;
 	border: 1px solid $orange !important;
 	border-radius: 1px !important;

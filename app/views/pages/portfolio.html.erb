@@ -3,10 +3,16 @@
 
 <div class="container">
 	<section id="portfolio-section">	
-		<h2>Examples of Our Work</h2>
-		<p class="text-center gray">There are several ways to tackle a responsive redesign...</p>
-		<p class="text-center gray">(If you'd like to just discuss with us directly, please <%= link_to "contact", contact_us_path %> us now.)</p>
+		<h2>Let's Get Started</h2>
+		<div class="text-center">
+			<p class="text-center gray">There are several ways to tackle a responsive redesign.<br>  If you'd like to skip past these details and order right away, or contact us directly, please...</p>
+			<%= link_to "Contact Us Now", contact_us_path, class: "btn btn-default btn-lg" %>			
+			<br><br>
+		</div>
 		<ol>
+			<hr>
+			<br>
+			<h2>Examples of Our Work</h2>
 			<li id="example-project-types">
 				<h3>Literal Mobile Responsive Redesign</h3>
 				<p>We edit your existing code to make it fit within mobile responsive viewports.</p>
