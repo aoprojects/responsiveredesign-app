@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get 'details' => 'pages#details'
   get 'learn' => 'pages#learn'
   get 'portfolio' => 'pages#portfolio'
+  get 'submission_confirmation' => 'pages#submission_confirmation'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

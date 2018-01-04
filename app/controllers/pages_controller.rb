@@ -29,4 +29,7 @@ class PagesController < ApplicationController
   def portfolio
   end
 
+  def submission_confirmation
+  end
+
 end
