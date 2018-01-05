@@ -1,0 +1,54 @@
+/*this sheet contains custom styles for forms and input fields*/
+/*several styles seem to be carrying over from bootstrap*/
+$gray-background: rgba(63,67,64,1.0);
+$dark-purple: #4c3257;
+$orange: rgba(255,153,0,1.0);
+
+/*THE BENOY IS SUFFICIENT FOR THE FORM FOR NEW_LEAD_PATH, NOT AGILE FORM*/
+.field-input-area input, textarea {
+	margin: 10px 0 10px 0;
+	font-size: 18px;
+	box-shadow-top: none;
+	box-shadow-left: none;
+	box-shadow-right: none;	
+	box-shadow-bottom: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+	border-radius: 0;
+	outline-width: 0;	
+	line-height: 30px;
+	color: black;
+	font-weight: 300;
+}
+.field-input-area input:hover, .field-input-area input:active, .field-input-area input:focus, textarea:hover, textarea:active, textarea:focus {
+	/* todo why upon focus is it turning blue outline?*/
+	box-shadow-top: none;
+	box-shadow-left: none;
+	box-shadow-right: none;
+	box-shadow-bottom: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid $orange;
+	transition: 0.1s ease;
+	width: 100%;
+	border-radius: 0;
+	outline-width: 0;
+}
+.field-input-area:focus {
+	box-shadow-top: none;
+	box-shadow-left: none;
+	box-shadow-right: none;
+	box-shadow-bottom: none;
+	border: none;
+	outline-width: 0;
+}
+button:visited, button:active, button:focus, button:hover {
+	outline: none;
+	outline-width: 0 !important;
+}
+
+

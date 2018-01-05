@@ -98,7 +98,7 @@ main, footer {
 .btn-default {
 	font-style: Helvetica;
 	margin: 20px;
-	background-color: $orange;
+	background-color: $orange !important;
 	color: white !important;
 	outline: none;
 	border: 1px solid $orange !important;
@@ -108,7 +108,7 @@ main, footer {
 	color: white !important;
 	transition: ease-in 0.1s;
 	border-radius: 0px;
-	background-color: $orange !important;
+	background-color: darken($orange, 10%) !important;
 	outline: none;
 	border: 1px solid $orange;
 	a {color: white !important}
