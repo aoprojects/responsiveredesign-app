@@ -1,5 +1,5 @@
-<link href="https://d1gwclp1pmzk26.cloudfront.net/agile/forms/v1/agile-form-min.css" rel="stylesheet">
-<form class="form-view agile-form-blck-transparent theme2" id="agile-form" action="https://responsiveredesign.agilecrm.com/formsubmit" style="max-width:450px;" method="GET">
+<!-- <link href="https://d1gwclp1pmzk26.cloudfront.net/agile/forms/v1/agile-form-min.css" rel="stylesheet"> -->
+<form class="form-view agile-form-blck-transparent theme2" id="agile-form" action="https://responsiveredesign.agilecrm.com/formsubmit" method="GET">
 <fieldset>
 
 <!-- Form Name -->
@@ -15,18 +15,18 @@
        <input type="hidden" id="_agile_form_id" name="_agile_form_id" value="5750790484393984">
 </div>
 <!-- Text input-->
-<div class="required-control">
+<div>
   <!-- <label for="agilefield-1">Enter Name<span class="agile-span-asterisk"> *</span></label> -->
   <div>
-  <input maxlength="250" id="agilefield-1" name="first_name" type="text" placeholder="Your Name" class="agile-height-default" required="">
+  <input maxlength="250" id="agilefield-1" name="first_name" type="text" placeholder="Your Name *" required="">
   </div>
   <div class="agile-custom-clear"></div>
 </div>
 <!-- Text input-->
-<div class="required-control">
+<div>
   <!-- <label class="agile-label" for="agilefield-2">Enter  Email<span class="agile-span-asterisk"> *</span></label> -->
   <div>
-  <input maxlength="250" id="agilefield-2" name="email" type="email" placeholder="Your Email Address" class="agile-height-default" required="">
+  <input maxlength="250" id="agilefield-2" name="email" type="email" placeholder="Your Email Address *" class="agile-height-default" required="">
   </div>
   <div class="agile-custom-clear"></div>
 </div>
@@ -34,21 +34,21 @@
 <div>
   <!-- <label class="agile-label" for="agilefield-4">Phone Number</label> -->
   <div>
-  <input maxlength="250" id="agilefield-4" name="phone" type="text" placeholder="Your Phone Number" class="agile-height-default">
+  <input maxlength="250" id="agilefield-4" name="phone" type="text" placeholder="Your Phone Number">
   </div>
   <div class="agile-custom-clear"></div>
 </div>
 <!-- Multiple Radios -->
-<div class="agile-group agile-form-multiradios">
-  <label class="agile-label" for="multiple_radios_1486467745519">Can we text the phone number above?</label>
-  <div class="agile-field agile-field-xlarge agile-height-default">
+<div>
+  <label for="multiple_radios_1486467745519">Can we text the phone number above?</label>
   <div>
-    <label for="multiple_radios_1486467745519-0" class="i-checks">
+  <div>
+    <label for="multiple_radios_1486467745519-0">
       <input type="radio" name="note" id="multiple_radios_1486467745519-0" value="Yes" checked="checked"><i></i>
       Yes
     </label></div>
   <div>
-    <label for="multiple_radios_1486467745519-1" class="i-checks">
+    <label for="multiple_radios_1486467745519-1">
       <input type="radio" name="note" id="multiple_radios_1486467745519-1" value="No"><i></i>
       No
     </label></div>
@@ -59,15 +59,15 @@
 <div class="required-control">
   <!-- <label class="agile-label" for="agilefield-5">Current Website<span class="agile-span-asterisk"> *</span></label> -->
   <div>
-  <input maxlength="250" id="agilefield-5" name="agilefield-5" type="text" placeholder="Your current website link, or a description of your idea" class="agile-height-default" required="">
+  <input maxlength="250" id="agilefield-5" name="agilefield-5" type="text" placeholder="Your current website link, or a description of your idea" required="">
   </div>
   <div class="agile-custom-clear"></div>
 </div>
 <!-- Select Basic -->
 <div>
-  <label class="agile-label" for="agilefield-6">Type of Work You're Interested In</label>
-  <div class="agile-field-xlarge agile-field">
-    <select id="agilefield-6" name="note" class="agile-height-default">
+  <label for="agilefield-6">Type of Work You're Interested In</label>
+  <div>
+    <select id="agilefield-6" name="note">
       <option value="">Select</option>
       <option value="1. Literal Redesign">1. Literal Redesign</option>
       <option value="2. Rapid Redesign">2. Rapid Redesign</option>
@@ -75,23 +75,24 @@
       <option value="4. Template Editing">4. Template Editing</option>
       <option value="5. Fully Custom Web Application">5. Fully Custom Web Application</option>
       <option value="6. Design Consultation">6. Design Consultation</option>
+      <option value="6. Design Consultation">7. Other</option>
     </select>
   </div>
 </div>
 
 <!-- Text input-->
-<div class="agile-group">
+<div>
   <!-- <label class="agile-label" for="agilefield-7">Referred by</label> -->
   <div>
-  <input maxlength="250" id="agilefield-7" name="note" type="text" placeholder="Referred by?" class="agile-height-default">
+  <input maxlength="250" id="agilefield-7" name="note" type="text" placeholder="Referred by?">
   </div>
   <div class="agile-custom-clear"></div>
 </div>
 <!-- Textarea -->
 <div>
   <!-- <label class="agile-label" for="agilefield-3">Comments</label> -->
-  <div class="agile-field-xlarge agile-field">
-    <textarea maxlength="250" id="agilefield-3" name="note" placeholder="Additional notes" class="agile-height-default"></textarea>
+  <div>
+    <textarea maxlength="250" id="agilefield-3" name="note" placeholder="Additional notes"></textarea>
   </div>
   <div class="agile-custom-clear"></div>
 </div>
@@ -101,7 +102,7 @@
 <div>
   <!-- <label class="agile-label">&nbsp;</label> -->
   <div>
-    <button type="submit">VSend</button>
+    <button class="btn btn-default btn-lg" type="submit">Send</button>
     <br><span id="agile-error-msg"></span>
   </div>
 </div>
