@@ -58,6 +58,18 @@ button:visited, button:active, button:focus, button:hover {
 	font-weight: 300;
 	width: 100%;	
 }
+.radial-options-section {
+	text-align: center;
+
+}
+.radial-option {
+	float: left;
+	margin: 0 !important;
+	padding: 0px 10px;
+	height: 60px;
+	position: relative;
+	top: -15px;
+}
 select {
 	background-color: white;
 	border-radius: 0;
