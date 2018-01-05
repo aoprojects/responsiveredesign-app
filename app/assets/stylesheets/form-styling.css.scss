@@ -5,6 +5,10 @@ $dark-purple: #4c3257;
 $orange: rgba(255,153,0,1.0);
 
 /*THE BENOY IS SUFFICIENT FOR THE FORM FOR NEW_LEAD_PATH, NOT AGILE FORM*/
+button:visited, button:active, button:focus, button:hover {
+	outline: none;
+	outline-width: 0 !important;
+}
 .field-input-area input, textarea {
 	margin: 10px 0 10px 0;
 	font-size: 18px !important;
@@ -46,14 +50,7 @@ $orange: rgba(255,153,0,1.0);
 	border: none;
 	outline-width: 0;
 }
-button:visited, button:active, button:focus, button:hover {
-	outline: none;
-	outline-width: 0 !important;
-}
-textarea {
-
-}
-.field-input-area label {
+.field-input-area label, select {
 	margin: 10px 0 10px 0;
 	font-size: 18px !important;
 	line-height: 30px;
@@ -61,4 +58,12 @@ textarea {
 	font-weight: 300;
 	width: 100%;	
 }
+select {
+	background-color: white;
+	border-radius: 0;
+}
+textarea {
+
+}
+
 
