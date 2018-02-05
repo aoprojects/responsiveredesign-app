@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'contact_us' => 'pages#contact_us'
   get 'details' => 'pages#details'
   get 'learn' => 'pages#learn'
+  get 'options' => 'pages#options'
   get 'portfolio' => 'pages#portfolio'
   get 'submission_confirmation' => 'pages#submission_confirmation'
 

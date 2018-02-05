@@ -32,4 +32,7 @@ class PagesController < ApplicationController
   def submission_confirmation
   end
 
+  def options
+  end
+
 end
