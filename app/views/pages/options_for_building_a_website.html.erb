@@ -1,13 +1,16 @@
-<section class="container">
+<!-- provide custom subtitle for each page -->
+<% content_for(:subtitle) do %>Your Options For Building A New Website<% end %>
+
+<section class="padding">
 	<div class="row">
-		<div class="text-left col-lg-offset-2 col-lg-10 col-md-offset-2 col-md-10 col-sm-offset-1 col-sm-11 col-xs-12">
-			<h1>What are my options for building a new website?</h1>
+		<div class="text-left col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-12">
+			<h1>Your Options For Building A New Website</h1>
 			<p><strong>There are custom sites and there are templated sites.</strong></p>
-			<p>We prefer to build fully custom sites because we can control and customize all the code in the website, and it's cheaper for you to maintain per month.</p>
-			<p>But if you prefer to have a content management system (CMS), below are our opinions of the most common ones...</p>
+			<p>Most options you'll find online claim that they can build you a beautiful, custom website that's perfect for your needs.  But that service is only perfect for your needs if your needs are exactly what that service can do.</p>
+			<p>Here is a summary of what those services can do, and an explanation of why we like to forgoe most of them and build custom whenever possible.</p>
 		</div>
 	</div><!-- end .row -->
-
+	<br>
 	<div class="row">
 		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
 			<h2>Google Sites</h2>
@@ -31,8 +34,20 @@
 			    <li>Limited functionality. The most complex item you can run is a basic store.</li>
 			</ul>
 			<p class="summary">Summary: Fine for quickly getting common-looking business brochure sites up and running.</p>
-
 		</div><!-- end col -->
+		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+			<h2>SquareSpace</h2>
+			<ul>
+			    <li>Easy to set up from the start</li>
+			    <li>Drag and drop functionality</li>
+			    <li>To process online payments, they require you to use the Stripe payment gateway - cannot use PayPal or your other preferred vendor.</li>
+			    <li>Monthly subscription for hosting </li>
+			    <li>Not so great with SEO, though you can edit your content and your titles.</li>
+			    <li>Out of all the templating engines that provide a CMS, SquareSpace seems to create the most beautiful looking templates. However, we’ve gotten reviews from clients that their CMS does not provide as many custom options as they’d like.</li>
+				<li>Hosting, domain, template, and CMS are all included in one price - no upsells for components</li>
+			</ul>	
+			<p class="summary">Summary: Recommended for simple to moderate online stores or business brochure websites, when a CMS is desired.</p>
+		</div><!-- end col -->		
 		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
 			<h2>WordPress</h2>
 			<ul>
@@ -46,21 +61,7 @@
 				    <li>Open source - code is easy to break if you are not a developer.</li>
 			</ul>
 			<p class="summary">Summary: Best choice for a very highly customized site with a lot of functionality AND a CMS. Have a developer on your team to help.</p>
-
 		</div><!-- end col -->	
-		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-			<h2>SquareSpace</h2>
-			<ul>
-			    <li>Easy to set up from the start</li>
-			    <li>Drag and drop functionality</li>
-			    <li>To process online payments, they require you to use the Stripe payment gateway - cannot use PayPal or your other preferred vendor.</li>
-			    <li>Monthly subscription for hosting </li>
-			    <li>Not so great with SEO, though you can edit your content and your titles.</li>
-			    <li>Out of all the templating engines that provide a CMS, SquareSpace seems to create the most beautiful looking templates. However, we’ve gotten reviews from clients that their CMS does not provide as many custom options as they’d like.</li>
-				<li>Hosting, domain, template, and CMS are all included in one price - no upsells for components</li>
-			</ul>	
-			<p class="summary">Summary: Recommended for simple to moderate online stores or business brochure websites, when a CMS is desired.</p>
-		</div><!-- end col -->
 		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
 			<h2>Shopify</h2>
 			<ul>
