@@ -1,7 +1,7 @@
 <!-- provide custom subtitle for each page -->
 <% content_for(:subtitle) do %>Mobile Responsive Design and Development<% end %>
 
-<div class="banner-area"> 
+<div class="banner-area hidden"> 
     <div class="opaque-overlay">
         <div class="inner-container">
             <div class="hotwords-container">
@@ -28,12 +28,11 @@
     <!-- end .opaque-overlay -->
 </div><!-- end .banner-area -->
 <div class="banner-image-area">
-    
+    <div class="banner-image-area-overlay">
+    </div>
 </div><!-- end banner image area -->
 <div id="center-main-section" class="text-left">
-    <div id="banner-icon">
-        <%= image_tag('coding.png') %>  
-    </div> 
+    <h2 class="banner-text">Mobile&nbsp;Responsive, Custom&nbsp;Websites</h2>
     <h3 class="text-center">Common Questions</h3>
     <div class="row">
         <div class="common-questions col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
@@ -46,10 +45,13 @@
                 <p class="short-form-question">Is it up to date?</p><p class ="short-form-answer">We code from scratch and use HTML5, CSS3, jQuery, Bootstrap, and our own custom templates.</p>
                 <p class="short-form-question">Where is it made?</p><p class ="short-form-answer">We are headquartered in New York City.</p>
                 <p class="short-form-question">What kind of service do I get?</p><p class ="short-form-answer">Our founder is available by appointment and would love to speak with you.</p>
-            </div>
+            </div>            
             <div class="text-center">
                 <%= link_to "Order A Website Now", contact_us_path, class: "btn btn-default btn-lg" %>
             </div>
+           <div id="banner-icon">
+                <%= image_tag('coding.png') %>  
+            </div>             
         </div>
     </div><!-- end .row -->
 </div><!-- end #center-main-section -->
