@@ -36,6 +36,13 @@ a:hover {
 		}
 	}
 }
+.banner-image-area {
+	width: 100%;
+	min-height: 300px;
+	max-height: 500px;
+	background-image: image-url('portfolio-banner.png');
+}
+/*for the part that shows portfolio images on home screen*/
 .banner-text {
 	font-family: Arial, sans-serif !important;
 	font-size: 30px !important;
