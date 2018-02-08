@@ -69,7 +69,8 @@ a:hover {
 	background-color: rgba(255,255,255,0.7);
 	z-index: 1;
 }
-.banner-text-1, {
+/*first row of banner text on index*/
+.banner-text-1 {
 	/*font-family: Arial, sans-serif !important;*/
 	/*font-size: 30px;*/
 	font-size: 50px;
@@ -80,6 +81,7 @@ a:hover {
 	font-family: 'Rammetto One', cursive;
 	text-shadow: 1px 1px white;
 }
+/*second row of banner text on index*/
 .banner-text-2 {
 	font-size: 50px;
 	position: absolute;
@@ -89,6 +91,30 @@ a:hover {
 	font-family: 'Rammetto One', cursive;
 	text-shadow: 1px 1px white;
 }
+/*begin for banner text on small screens*/
+@media only screen and (max-width: 991px) {
+	.banner-text-1, .banner-text-2 {
+		position: absolute;
+		left: 15%;
+		font-size: 45px;
+		/*transition: font-size ease 0.1s;*/
+	}
+}
+@media only screen and (min-width: 560px) and (max-width: 731px) {
+	.banner-text-1, .banner-text-2 {
+		position: absolute;
+		left: 17%;
+		font-size: 32px;
+	}
+	.banner-text-1 {
+		top: 7%;
+	}
+	.banner-text-2 {
+		top: 10%;
+	}
+
+}
+/*end for banner text on small screens*/
 @media only screen and (min-width: 768px) {
 	#banner-icon {
 /* todo move the icons to be beside each other on larger screens*/
@@ -194,7 +220,7 @@ h3 {
 	font-size: 28px;
 	font-family: Courier New;
 }
-/*the following will make the background banner text smaller and smaller as the screen width gets smaller*/
+/*the following will make the background banner text (currently not used)  smaller and smaller as the screen width gets smaller*/
 @media only screen and (min-width: 650px) and (max-width: 756px) {
 	.hotwords-container {
 		font-size: 24px;
