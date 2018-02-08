@@ -72,18 +72,22 @@ a:hover {
 .banner-text-1, {
 	/*font-family: Arial, sans-serif !important;*/
 	/*font-size: 30px;*/
-	font-size: 60px;
+	font-size: 50px;
 	position: absolute;
 	left: 5%;
 	top: 5%;
 	z-index: 3;
+	font-family: 'Rammetto One', cursive;
+	text-shadow: 1px 1px white;
 }
 .banner-text-2 {
-	font-size: 60px;
+	font-size: 50px;
 	position: absolute;
 	left: 10%;
 	top: 11%;
 	z-index: 3;
+	font-family: 'Rammetto One', cursive;
+	text-shadow: 1px 1px white;
 }
 @media only screen and (min-width: 768px) {
 	#banner-icon {
@@ -94,13 +98,15 @@ a:hover {
 	}
 }
 /*banner section end*/
-body {
+body h3, body h3, {
   /*  margin-top: 50px; *//* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     background-color: white; /*aka rgb(71,71,71)*/
-   	color: rgba(76,50,87,1.0);	
+   	/*color: rgba(76,50,87,1.0);	*/
+   	color: $orange;
     padding: 35px;
     width: 100%;
 	padding: 0;
+	font-family: 'Poiret One', cursive !important;
     /*display: flex;*/
 }
 .black-text {
@@ -444,12 +450,13 @@ p {
 .short-form-question {
 	color: black;
 	font-size: 24px;
+	padding: 10px;
 }
 .short-form-answer {
-	color: $orange;
+	color: gray;
 	font-size: 20px;
 	position: relative;
-	left: 10px;
+	left: 25px;
 	bottom: 12px;
 }
 .text-far-right {
