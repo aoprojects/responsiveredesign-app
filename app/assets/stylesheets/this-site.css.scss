@@ -39,13 +39,30 @@ a:hover {
 }
 .banner-image-area {
 	width: 100%;
-	height: 450px;
+	height: 300px;
 	max-width: 100%;
 	background-image: image-url('portfolio-banner.png');
+	background-position: center;
 	text-align: center;
 	/*position: relative;*/
 	/*top: 0;*/
 }
+/* begin mobile responsive height of banner image area*/
+
+@media only screen and (min-width: 560px) {
+	.banner-image-area {
+		height: 300px;
+	}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 559px) {
+	.banner-image-area {
+		max-height: 30vh;
+	}
+}
+
+/*end mobile responsive design of banner image area*/
+
 /*for the part that shows portfolio images on home screen*/
 .banner-image-area-overlay {
 	width: 100%;
