@@ -37,6 +37,12 @@ a:hover {
 		}
 	}
 }
+.background-alt-color {
+	background-color: #eee;
+	h2, h3 {
+		background: transparent !important;
+	}
+}
 .banner-image-area {
 	width: 100%;
 	max-width: 100%;
@@ -402,7 +408,7 @@ p {
 @media only screen and (min-width: 768px) {
 	main section {
 		float: left;
-		min-height: 500px;
+		/*min-height: 500px;*/
 	}/* handles grid layout of sections */
 } /*end media query for larger than xs devices*/
 
