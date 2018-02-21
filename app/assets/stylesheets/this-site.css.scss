@@ -343,8 +343,8 @@ main section {
 }
 @media only screen and (max-width: 892px) {
 	.margin-top-on-desktop {
-		/*position: relative;*/
-		top: 0px;
+		position: relative;
+		top: 0px !important;
 	}
 }
 p {
