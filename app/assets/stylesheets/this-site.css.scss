@@ -51,8 +51,6 @@ a:hover {
 	background-position: center;
 	text-align: center;
 	background-size: contain;
-	/*position: relative;*/
-	/*top: 0;*/
 }
 /* begin mobile responsive height of banner image area*/
 
@@ -67,7 +65,6 @@ a:hover {
 	}
 }*/
 /*end mobile responsive design of banner image area*/
-
 /*for the part that shows portfolio images on home screen*/
 .banner-image-area-overlay {
 	width: 100%;
@@ -77,25 +74,38 @@ a:hover {
 }
 /*first row of banner text on index*/
 .banner-text-1 {
-	/*font-family: Arial, sans-serif !important;*/
-	/*font-size: 30px;*/
 	font-size: 50px;
+	position: absolute;
+	left: 5%;
+	top: 8%;
+	z-index: 3;
+	font-family: 'Rammetto One', cursive;
+	text-shadow: 1px 1px white;
+
+/*	font-size: 50px;
 	position: absolute;
 	left: 5%;
 	top: 5%;
 	z-index: 3;
 	font-family: 'Rammetto One', cursive;
-	text-shadow: 1px 1px white;
+	text-shadow: 1px 1px white;*/
 }
 /*second row of banner text on index*/
 .banner-text-2 {
 	font-size: 50px;
 	position: absolute;
 	left: 10%;
-	top: 11%;
+	top: 25%;
 	z-index: 3;
 	font-family: 'Rammetto One', cursive;
 	text-shadow: 1px 1px white;
+/*	font-size: 50px;
+	position: absolute;
+	left: 10%;
+	top: 11%;
+	z-index: 3;
+	font-family: 'Rammetto One', cursive;
+	text-shadow: 1px 1px white;*/
 }
 /*begin for banner text on small screens*/
 @media only screen and (max-width: 991px) {
