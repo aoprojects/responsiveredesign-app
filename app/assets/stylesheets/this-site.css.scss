@@ -199,10 +199,11 @@ body h3, body h3, {
 	padding: 40px;
 }
 #flaticon-checklist {
-	width: 200px;
-	img {
-		float: right;
-	}
+	width: 150px;
+	margin: 0 auto;
+}
+#flaticon-checklist img {
+	height: 100px;
 }
 footer {
 	// background-color: $gray-background;
