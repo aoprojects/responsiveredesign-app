@@ -198,6 +198,12 @@ body h3, body h3, {
 .container {
 	padding: 40px;
 }
+#flaticon-checklist {
+	width: 200px;
+	img {
+		float: right;
+	}
+}
 footer {
 	// background-color: $gray-background;
 	border-top: 1px solid rgba(63,67,64,1.0);
