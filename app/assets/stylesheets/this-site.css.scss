@@ -340,6 +340,22 @@ h4 {
 		font-size: 24px !important;
 	}	
 }*/
+#index-action-button {
+	position: absolute;
+	top: 250px;
+	text-align: center;
+	width: 50vw;
+	margin: 0 auto;
+}
+#index-action-button a {
+	padding: 10px 10vw !important;
+	font-size: 24px;
+	font-weight: 250;
+	box-shadow: 5px 5px 5px gray;
+	border-radius: 15px !important;
+	width: 100%;
+	/*padding-right: 25% !important;*/
+}
 main {
 	width: 100%;
 	// position: absolute;
