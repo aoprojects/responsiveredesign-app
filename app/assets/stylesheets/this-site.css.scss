@@ -475,11 +475,22 @@ p {
 	left: 1em;
 	font-size: 20px;
 }
+/*iframe design for portfolio page videos*/
 .portfolio-iframe {
 	margin: 0 auto;
 	width: 560px;	
 	max-width: 100%;
 }
+@media only screen and (max-width: 690px) {
+	.portfolio-iframe iframe {
+		max-width: 90vw;
+		position: relative;
+		left: -20px;
+		/*padding-bottom: 25%;*/
+		width: 100%;
+	}
+}
+/*end iframe design for portfolio page videos*/
 @media only screen and (min-width: 768px) {
 	main section {
 		float: left;
