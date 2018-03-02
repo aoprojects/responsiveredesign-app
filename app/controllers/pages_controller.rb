@@ -14,15 +14,6 @@ class PagesController < ApplicationController
   def why_us
   end
 
-  def the_process
-  end
-
-  def pricing
-  end
-
-  def details
-  end
-
   def learn
   end
 

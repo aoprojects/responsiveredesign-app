@@ -6,13 +6,10 @@ Rails.application.routes.draw do
   get 'privacy_and_terms' => 'pages#privacy_and_terms'
     # we do not want all resources for the order routes
   get 'orders' => 'orders#index'
+  get 'contact_us' => "pages#contact_us"
   get 'new_order' => 'orders#new'
   get 'order' => 'order#show'
   get 'why_us' => 'pages#why_us'
-  get 'pricing' => 'pages#pricing'
-  get 'the_process' => 'pages#the_process'
-  get 'contact_us' => 'pages#contact_us'
-  get 'details' => 'pages#details'
   get 'learn' => 'pages#learn'
   get 'options_for_building_a_website' => 'pages#options_for_building_a_website'
   get 'portfolio' => 'pages#portfolio'
