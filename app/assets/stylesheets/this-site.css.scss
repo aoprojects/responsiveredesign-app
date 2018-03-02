@@ -22,6 +22,10 @@ a {
 a:hover {
 	color: $orange !important;
 }
+.adjusted-left {
+	position: relative;
+	left: -25px;
+}
 /*banner section start*/
 #banner-icon {
 	text-align: center;
@@ -47,7 +51,8 @@ a:hover {
 	width: 100%;
 	max-width: 100%;
 	height: 400px;
-	background-image: image-url('portfolio-banner.png');
+	/*background-image: image-url('portfolio-banner.png');*/
+	background-image: image-url('https://s3.us-east-2.amazonaws.com/rrbrandimages/portfolio-banner.png');
 	background-position: center;
 	text-align: center;
 	background-size: contain;
