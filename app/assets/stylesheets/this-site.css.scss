@@ -52,11 +52,12 @@ a:hover {
 	max-width: 100%;
 	height: 400px;
 	/*background-image: url('portfolio-banner.png');*/
+	background-image: url('pexels-photo-160107.jpeg');
 	/*background-image: url('https://s3.us-east-2.amazonaws.com/rrbrandimages/portfolio-banner.png');*/
-	background-image: url('https://s3.us-east-2.amazonaws.com/rrbrandvideos/Workaholic.mp4');
+	/*background-image: url('https://s3.us-east-2.amazonaws.com/rrbrandvideos/Workaholic.mp4');*/
 	background-position: center;
 	text-align: center;
-	background-size: contain;
+	background-size: cover;
 }
 /* begin mobile responsive height of banner image area*/
 
@@ -654,7 +655,9 @@ p {
 .homepage-hero-module {
     border-right: none;
     border-left: none;
-    position: relative;
+    position: absolute;
+    top: 100px;
+    left: 0;
 }
 .no-video .video-container video,
 .touch .video-container video {
