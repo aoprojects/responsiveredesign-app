@@ -230,6 +230,11 @@ body h3, body h3, {
 .container {
 	padding: 40px;
 }
+.free-offer {
+	position: absolute;
+	top: 200px;
+	background-color: transparent;
+}
 #flaticon-checklist {
 	width: 150px;
 	margin: 0 auto;
@@ -352,7 +357,7 @@ h4 {
 }*/
 #index-action-button {
 	position: absolute;
-	top: 300px;
+	top: 350px;
 	text-align: center;
 	/*width: 100px;*/
 	margin: 0 auto;
