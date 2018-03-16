@@ -51,13 +51,15 @@ a:hover {
 	width: 100%;
 	max-width: 100%;
 	height: 400px;
-	/*background-image: url('portfolio-banner.png');*/
-	background-image: url('https://s3.us-east-2.amazonaws.com/rrbrandimages/pexels-photo-160107.jpeg');
+	background-image: url('portfolio-banner.png');
+	background-image: url("gplaypattern.png");
+	/*background-image: url('https://s3.us-east-2.amazonaws.com/rrbrandimages/pexels-photo-160107.jpeg');*/
 	/*background-image: url('https://s3.us-east-2.amazonaws.com/rrbrandimages/portfolio-banner.png');*/
 	/*background-image: url('https://s3.us-east-2.amazonaws.com/rrbrandvideos/Workaholic.mp4');*/
-	background-position: center;
+	/*background-position: center;*/
 	text-align: center;
-	background-size: cover;
+	background-size: initial;
+	/*background-size: cover;*/
 	box-shadow: 0px 5px 15px #ddd;
 }
 /* begin mobile responsive height of banner image area*/
@@ -77,7 +79,7 @@ a:hover {
 .banner-image-area-overlay {
 	width: 100%;
 	height: 100%;
-	background-color: rgba(255,255,255,0.7);
+	background-color: rgba(255,255,255,0.0);/*make it so transparent that it doesn't show visibly, just for the currently chosen background image ^ */
 	z-index: 1;
 }
 /*first row of banner text on index*/
