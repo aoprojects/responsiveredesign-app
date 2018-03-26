@@ -227,6 +227,12 @@ body h3, body h3, {
 .container {
 	padding: 40px;
 }
+.device-circle-icon img {
+	max-width: 230px;
+	margin: 30px;
+	box-shadow: 5px 5px 15px #bbb;
+	border-radius: 120px;
+}
 .free-offer {
 	position: absolute;
 	top: 200px;
@@ -393,16 +399,16 @@ main #center-main-section h1 {
 main section {
 
 }
-@media only screen and (min-width: 893px) {
+@media only screen and (min-width: 992px) {
 	.margin-top-on-desktop {
 		position: relative;
-		top: 180px;
+		top: 150px;
 	}
 }
-@media only screen and (max-width: 892px) {
+@media only screen and (max-width: 991px) {
 	.margin-top-on-desktop {
 		position: relative;
-		top: 0px !important;
+		top: 15px !important;
 	}
 }
 p {
