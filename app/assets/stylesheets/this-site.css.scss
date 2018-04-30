@@ -47,10 +47,22 @@ a:hover {
 		background: transparent !important;
 	}
 }
+/**/
+.pages_index main {
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+.pages_index footer {
+	position: relative;
+	top: 0px;
+}
 .banner-image-area {
-	width: 100%;
-	max-width: 100%;
-	height: 400px;
+	width: 100vw;
+	max-width: 100vw;
+	/*height: 400px;*/
+	height: 100vh;
+	min-height: 400px;
 	background-image: url('portfolio-banner.png');
 	background-image: url("gplaypattern.png");
 	/*background-image: url('https://s3.us-east-2.amazonaws.com/rrbrandimages/pexels-photo-160107.jpeg');*/
@@ -83,6 +95,9 @@ a:hover {
 	z-index: 1;
 }
 /*first row of banner text on index*/
+#index-banner-text-group h1, #index-banner-text-group h3, #index-banner-text-group div {
+	padding-top: 20vh;
+}
 .banner-text-1 {
 	font-size: 50px;
 	position: absolute;
