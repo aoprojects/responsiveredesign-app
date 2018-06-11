@@ -23,7 +23,7 @@ class PagesController < ApplicationController
   def submission_confirmation
   end
 
-  def options_for_building_a_website
+  def learn_more_about_responsive_redesigns
   end
 
 end
