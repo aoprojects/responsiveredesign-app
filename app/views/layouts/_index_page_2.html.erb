@@ -15,60 +15,70 @@ BEGIN NOW -->
     </div>
 </div><!-- end banner image area -->
 <!-- coverr video layout could render here if we wanted to use it -->
-<section>
-    <div class="container">
-        <div class="text-center animated fadeInUp delay-09s">
-            <%= image_tag("flaticons/flaticon-bounce-rate-customized.png", class: "adjusted-left") %>
-        </div>    
-        <h2>We Will Fix Your Bounce Rate!</h2>
-        <h3>Bounce Rate<br> =<br> "the percentage of visitors who come to your website and leave<br> without viewing any other pages on your website"</h3>
-        <p class="text-center">a.k.a. How quickly Millenials leave when a website is ugly or doesn't answer their question within 3 seconds.</p>
-        <div class="text-center">
-            <%= link_to "Button", contact_us_path, class: "btn btn-default btn-lg" %>    
-        </div>
-    </div><!-- end container -->
-</section>
-<section class="background-alt-color" alt="characteristics of mobile optimized and mobile responsive websites">
-    <div class="container animated fadeInUp delay-09s">
-        <div class="row">
-            <div class="text-center animated fadeInUp delay-09s">
-                <%= image_tag("flaticons/phone-storefront-flaticon-combo.png") %>
-            </div>            
-            <h3>Mobile&nbsp;Optimize Your&nbsp;Company</h3>
+<section class="background-alt-color container text-left animated fadeInUp delay-09s">
+    <div class="text-center animated fadeInUp delay-09s">
+        <%= image_tag("#") %>
+    </div>
+    <h3 class="text-center orange animated fadeInUp delay-09s">The Code Book</h3>
+    <div class="row animated fadeInUp delay-03s">
+        <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
             <br>
-            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                <p><big>Characteristics of a mobile-optimized brand:</big></p>
-                <ul>
-                    <h4>Web:</h4>
-                    <li>Website is as easy to read on mobile as on desktop</li>
-                    <li>All info on the website is current, including the address, phone number, products, and pricing</li>
-                    <li>The first page on the website to load offers the exact info that user wants to find</li>
-                    <li>Website images render efficiently</li>
-                    <li>No mobile pinching is necessary, ever.</li>
-                    <li>Drop downs and animations are functional, timely, and not distracting</li>
-                    <li>Textual content is brief, and accompanied by skimmable graphics</li>
-                    <h4>Non-web:</h4>
-                    <li>Synced with Google Maps whenever a physcial location is involved</li>
-                    <li>Relevant Google Map searches return the brand <br>&nbsp;&nbsp;(eg. a cafe shows up for "cafe", "coffee", "coffee shop", "brunch", "tea", "pastries", "etc.")</li>
-                    <li>Synced with Yelp whenever a physical location is involved</li>
-                    <h4>To Sum It Up:</h4>
-                    <li>User enjoys being on your site and feels good after interacting with it</li>
-                </ul>
-            </div><!-- end col -->
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="text-center margin-top-on-desktop device-circle-icon">
-                    <%= image_tag("device-icon-in-orange-circle.png") %>
-                    <!-- icon found for free on https://www.iconfinder.com/websitebeaver -->
-                </div>
-                <!-- todo insert graphic of phone with mobile site and another with google maps -->
-            </div><!-- end col -->
-        </div><!-- end row -->
-        <br>
-        <div class="text-center">
-            <%= link_to "View Full Website Standards Checklist", how_we_maintain_quality_path, class: "btn btn-default btn-lg" %>
+            <div>
+                <p>When this company was first established, all we knew how to do was code.  We had no idea how to run a web design and developmenet busienss.</p>
+                <p>So we started asking other agencies how they run theirs.</p>
+                <p>The result is a book called <u>How To Serve: Code</u> that we expect to distribute within the year.</p>
+                <div class="text-center"><%= image_tag '' %></div>
+                <p>This book has given us a unique, investigative perspective of the web services industry that leaves us increasingly informed.</p>
+                <h4>The Results:</h4>
+                <ol>
+                    <li>Our founder now advises other web services companies on best practices, industry trends, and how to design a purpose driven company.</li>
+                    <li>We make informed choices about how to best serve you, taking our company mission into account.</li>
+                    <li>We have a ton of allies who can do pretty much anything that we cannot directly do.</li>
+                </ol>
+                <p><i>How can the industry help you?</i></p>
+            </div>            
+            <div class="text-center">
+                <%= link_to "Talk To Us", contact_us_path, class: "btn btn-default btn-lg" %>
+            </div>            
         </div>
-    </div><!-- end container-->
-</section>
+    </div><!-- end .row -->
+</section><!-- end #center-main-section -->
+<section class="background-alt-color container text-left animated fadeInUp delay-09s">
+    <div class="text-center animated fadeInUp delay-09s">
+        <%= image_tag("#") %>
+    </div>
+    <h3 class="text-center orange animated fadeInUp delay-09s">Supporting Women in Tech</h3>
+    <div class="row animated fadeInUp delay-03s">
+        <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+            <br>
+            <div>
+                <p>founder believes in inviting women to the table</p>
+            </div>            
+            <div class="text-center">
+                <%= link_to "Let's Work Together", contact_us_path, class: "btn btn-default btn-lg" %>
+            </div>            
+        </div>
+    </div><!-- end .row -->
+</section><!-- end #center-main-section -->
+<section class="background-alt-color container text-left animated fadeInUp delay-09s">
+    <div class="text-center animated fadeInUp delay-09s">
+        <%= image_tag("#") %>
+    </div>
+    <h3 class="text-center orange animated fadeInUp delay-09s">Quality of Work</h3>
+    <div class="row animated fadeInUp delay-03s">
+        <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+            <br>
+            <div>
+                <p>Ensuring Quality</p>
+                partnerships
+                checklist
+            </div>            
+            <div class="text-center">
+                <%= link_to "See The Checklist", how_we_maintain_quality_path, class: "btn btn-default btn-lg" %>
+            </div>            
+        </div>
+    </div><!-- end .row -->
+</section><!-- end #center-main-section -->
 <section>
     <div class="container text-center animated fadeInUp delay-09s">
         <div class="text-center animated fadeInUp delay-09s">
@@ -80,28 +90,21 @@ BEGIN NOW -->
             <%= link_to "Pricing for a Redesign", portfolio_path, class: "btn btn-lg btn-default" %>
         </div>
         <br>
-        <p><small>Note: Services in addition to what is listed on this page do require custom rates.</small></p>
     </div>
 </section>
-<section class="background-alt-color" id="center-main-section" class="text-left animated fadeInUp delay-09s">
+<section class="background-alt-color container text-left animated fadeInUp delay-09s">
     <div class="text-center animated fadeInUp delay-09s">
-        <%= image_tag("flaticons/flaticon-faq-freepik.png") %>
+        <%= image_tag("#") %>
     </div>
-    <h3 class="text-center orange animated fadeInUp delay-09s">Frequently Asked Questions</h3>
+    <h3 class="text-center orange animated fadeInUp delay-09s">Our Mission</h3>
     <div class="row animated fadeInUp delay-03s">
-        <div class="common-questions col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+        <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
             <br>
-            <div class="explanation">
-                <p class="short-form-question">What is responsive design?</p><p class="short-form-answer">Web design that looks good on any device at any width.</p>
-                <p class="short-form-question">How fast can it be done?</p><p class="short-form-answer">Average development time = One week.</p>
-                <p class="short-form-question">How custom is it?</p><p class ="short-form-answer">In a code editor, with help from our pre-designed, modern templates.</p>
-                <p class="short-form-question">Is it affordable?</p><p class ="short-form-answer">We think so. Our prices are often 30% below other American agencies.
-                <p class="short-form-question">Is it up to date?</p><p class ="short-form-answer">We code from scratch and use HTML5, CSS3, jQuery, Bootstrap, and our own custom templates.</p>
-                <p class="short-form-question">Where is it made?</p><p class ="short-form-answer">We are headquartered in New York City.</p>
-                <p class="short-form-question">What kind of service do I get?</p><p class ="short-form-answer">Our founder is available by appointment and would love to speak with you.</p>
+            <div>
+                <p>content todo</p>
             </div>            
             <div class="text-center">
-                <%= link_to "Order A Website Now", contact_us_path, class: "btn btn-default btn-lg" %>
+                <%= link_to "Let's Work Together", contact_us_path, class: "btn btn-default btn-lg" %>
             </div>            
         </div>
     </div><!-- end .row -->
