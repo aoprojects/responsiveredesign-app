@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get 'why_us' => 'pages#why_us'
   get 'how_we_maintain_quality' => 'pages#how_we_maintain_quality'
   get 'options_for_building_a_website' => 'pages#options_for_building_a_website'
-  get 'portfolio' => 'pages#portfolio'
+  get 'pricing' => 'pages#pricing'
   get 'submission_confirmation' => 'pages#submission_confirmation'
 
 

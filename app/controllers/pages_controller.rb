@@ -17,7 +17,7 @@ class PagesController < ApplicationController
   def how_we_maintain_quality
   end
 
-  def portfolio
+  def pricing
   end
 
   def submission_confirmation
