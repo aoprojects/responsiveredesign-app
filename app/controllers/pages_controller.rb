@@ -14,7 +14,7 @@ class PagesController < ApplicationController
   def why_us
   end
 
-  def learn
+  def how_we_maintain_quality
   end
 
   def portfolio
