@@ -1,0 +1,112 @@
+<!-- this is the older (than June 2018) design for the home page. Talks more about responsive design than about us as a company.  
+BEGIN NOW -->
+
+<!-- provide custom subtitle for each page -->
+<% content_for(:subtitle) do %>Mobile Responsive Web Design and Development<% end %>
+<div class="banner-image-area animated fadeIn delay-09s wow">
+    <div id="index-banner-text-group">
+        <h1 class="banner-text-1 animated fadeInDown delay-07s">Mobile&nbsp;Responsive,</h1>
+        <h1 class="banner-text-2 animated fadeInDown delay-07s">Custom&nbsp;Websites</h1>
+        <h3 class="text-center free-offer">Now offering a free 15 minute <br>consulting session about ANYTHING internet,<br> <small class="orange">(not just about how we can work together)</small>.</h3>
+        <div class="text-center animated fadeInDown delay-07s" id="index-action-button">
+            <%= link_to "Text Us Now", contact_us_path, class: "btn btn-lg btn-default" %>
+        </div>
+    </div><!-- index banner text group -->
+    <div class="banner-image-area-overlay">
+    </div>
+</div><!-- end banner image area -->
+<!-- coverr video layout could render here if we wanted to use it -->
+<section>
+    <div class="container">
+        <div class="text-center animated fadeInUp delay-09s">
+            <%= image_tag("flaticons/flaticon-bounce-rate-customized.png", class: "adjusted-left") %>
+        </div>    
+        <h2>We Will Fix Your Bounce Rate!</h2>
+        <h3>Bounce Rate<br> =<br> "the percentage of visitors who come to your website and leave<br> without viewing any other pages on your website"</h3>
+        <p class="text-center">a.k.a. How quickly Millenials leave when a website is ugly or doesn't answer their question within 3 seconds.</p>
+        <div class="text-center">
+            <%= link_to "Get a Beautiful Website, Fast", contact_us_path, class: "btn btn-default btn-lg" %>    
+        </div>
+    </div><!-- end container -->
+</section>
+<section class="background-alt-color" alt="characteristics of mobile optimized and mobile responsive websites">
+    <div class="container animated fadeInUp delay-09s">
+        <div class="row">
+            <div class="text-center animated fadeInUp delay-09s">
+                <%= image_tag("flaticons/phone-storefront-flaticon-combo.png") %>
+            </div>            
+            <h3>Mobile&nbsp;Optimize Your&nbsp;Company</h3>
+            <br>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <p><big>Characteristics of a mobile-optimized brand:</big></p>
+                <ul>
+                    <h4>Web:</h4>
+                    <li>Website is as easy to read on mobile as on desktop</li>
+                    <li>All info on the website is current, including the address, phone number, products, and pricing</li>
+                    <li>The first page on the website to load offers the exact info that user wants to find</li>
+                    <li>Website images render efficiently</li>
+                    <li>No mobile pinching is necessary, ever.</li>
+                    <li>Drop downs and animations are functional, timely, and not distracting</li>
+                    <li>Textual content is brief, and accompanied by skimmable graphics</li>
+                    <h4>Non-web:</h4>
+                    <li>Synced with Google Maps whenever a physcial location is involved</li>
+                    <li>Relevant Google Map searches return the brand <br>&nbsp;&nbsp;(eg. a cafe shows up for "cafe", "coffee", "coffee shop", "brunch", "tea", "pastries", "etc.")</li>
+                    <li>Synced with Yelp whenever a physical location is involved</li>
+                    <h4>To Sum It Up:</h4>
+                    <li>User enjoys being on your site and feels good after interacting with it</li>
+                </ul>
+            </div><!-- end col -->
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="text-center margin-top-on-desktop device-circle-icon">
+                    <%= image_tag("device-icon-in-orange-circle.png") %>
+                    <!-- icon found for free on https://www.iconfinder.com/websitebeaver -->
+                </div>
+                <!-- todo insert graphic of phone with mobile site and another with google maps -->
+            </div><!-- end col -->
+        </div><!-- end row -->
+        <br>
+        <div class="text-center">
+            <%= link_to "View Full Website Standards Checklist", learn_path, class: "btn btn-default btn-lg" %>
+        </div>
+    </div><!-- end container-->
+</section>
+<section>
+    <div class="container text-center animated fadeInUp delay-09s">
+        <div class="text-center animated fadeInUp delay-09s">
+            <%= image_tag("flaticons/flaticon-price-tag-smashicons.png") %>
+        </div>        
+        <h3>Pricing</h3>
+        <p>Unlike other agencies, we post pricing for our basic services on this website, <br>for you to look at now!</p>
+        <div class="text-center">
+            <%= link_to "Pricing for a Redesign", portfolio_path, class: "btn btn-lg btn-default" %>
+        </div>
+        <br>
+        <p><small>Note: Services in addition to what is listed on this page do require custom rates.</small></p>
+    </div>
+</section>
+<section class="background-alt-color" id="center-main-section" class="text-left animated fadeInUp delay-09s">
+    <div class="text-center animated fadeInUp delay-09s">
+        <%= image_tag("flaticons/flaticon-faq-freepik.png") %>
+    </div>
+    <h3 class="text-center orange animated fadeInUp delay-09s">Frequently Asked Questions</h3>
+    <div class="row animated fadeInUp delay-03s">
+        <div class="common-questions col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+            <br>
+            <div class="explanation">
+                <p class="short-form-question">What is responsive design?</p><p class="short-form-answer">Web design that looks good on any device at any width.</p>
+                <p class="short-form-question">How fast can it be done?</p><p class="short-form-answer">Average development time = One week.</p>
+                <p class="short-form-question">How custom is it?</p><p class ="short-form-answer">In a code editor, with help from our pre-designed, modern templates.</p>
+                <p class="short-form-question">Is it affordable?</p><p class ="short-form-answer">We think so. Our prices are often 30% below other American agencies.
+                <p class="short-form-question">Is it up to date?</p><p class ="short-form-answer">We code from scratch and use HTML5, CSS3, jQuery, Bootstrap, and our own custom templates.</p>
+                <p class="short-form-question">Where is it made?</p><p class ="short-form-answer">We are headquartered in New York City.</p>
+                <p class="short-form-question">What kind of service do I get?</p><p class ="short-form-answer">Our founder is available by appointment and would love to speak with you.</p>
+            </div>            
+            <div class="text-center">
+                <%= link_to "Order A Website Now", contact_us_path, class: "btn btn-default btn-lg" %>
+            </div>            
+        </div>
+    </div><!-- end .row -->
+</section><!-- end #center-main-section -->
+
+
+
