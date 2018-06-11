@@ -16,20 +16,26 @@ BEGIN NOW -->
 </div><!-- end banner image area -->
 <!-- coverr video layout could render here if we wanted to use it -->
 <section class="container text-left animated fadeInUp delay-09s">
-    <div class="text-center animated fadeInUp delay-09s">
-        <%= image_tag("#") %>
-    </div>
     <h3 class="text-center orange animated fadeInUp delay-09s">The Code Book</h3>
     <div class="row animated fadeInUp delay-03s">
         <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
             <br>
             <div>
-                <p>When this company was first established, all we knew about the business was how to code.  We had no idea how to run a web design and developmenet company - how to price things, how to find clients, what they would expect from us.</p>
+                <p>When this company was first established, all we knew about the business was how to code.  We had no idea how to run a web design and developmenet company. 
+                    <larger>
+                        <i>
+                            <br><br>How do we price things? 
+                            <br>How should we find clients?
+                            <br>What will they expect from us?
+                            <br>
+                        </i>
+                    </larger>
+                </p>
                 <p>So we started asking other agencies how they run their businesses.</p>
-                <p>The result is an interview based e-book called <u>How To Serve: Code</u> that we expect to distribute within the year.</p>
+                <p>The result is an interview based e-book called <b>How To Serve: Code</b> that we expect to distribute within the year.</p>
                 <div class="text-center"><%= image_tag '' %></div>
                 <p>This book has given us a unique, investigative, increasingly informed view into the web services industry as a whole.</p>
-                <h4>The outcome:</h4>
+                <h4>What this means:</h4>
                 <ol>
                     <li>Our founder now advises other web services companies on best practices, industry trends, and how to grow a sustainable company.</li>
                     <li>Having seen many business strategies play out, we make informed choices about how to best serve you.</li>
@@ -61,7 +67,7 @@ BEGIN NOW -->
         </div>
     </div><!-- end .row -->
 </section><!-- end #center-main-section -->
-<section class="background-alt-color container text-left animated fadeInUp delay-09s">
+<section class="container text-left animated fadeInUp delay-09s">
     <div class="text-center animated fadeInUp delay-09s">
         <%= image_tag("#") %>
     </div>
@@ -70,17 +76,19 @@ BEGIN NOW -->
         <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
             <br>
             <div>
-                <p>Ensuring Quality</p>
-                partnerships
-                checklist
-            </div>            
-            <div class="text-center">
-                <%= link_to "See The Checklist", how_we_maintain_quality_path, class: "btn btn-default btn-lg" %>
-            </div>            
-        </div>
+                <p>We have high standards for ourselves individually and professionally, and we maintain high standards for those that we collaborate with.</p>
+                <br>
+                <p class="text-right">If a potential partner doesn't speak English well, if they don't write up to date code, if their previous work is just ugly, we quickly say no to the collaboration.</p>
+                <br>
+                <p>In addition to passing our preliminary tests, every designer or developer we work with receives our custom made Quality Checklist, and we hold them to this standard during every project.</p>
+                <div class="text-center">
+                    <%= link_to "See The Checklist", how_we_maintain_quality_path, class: "btn btn-default btn-lg" %>
+                </div>
+            </div>                       
+        </div><!-- end col -->
     </div><!-- end .row -->
 </section><!-- end #center-main-section -->
-<section>
+<section class="background-alt-color">
     <div class="container text-center animated fadeInUp delay-09s">
         <div class="text-center animated fadeInUp delay-09s">
             <%= image_tag("flaticons/flaticon-price-tag-smashicons.png") %>
@@ -93,22 +101,24 @@ BEGIN NOW -->
         <br>
     </div>
 </section>
-<section class="background-alt-color container text-left animated fadeInUp delay-09s">
-    <div class="text-center animated fadeInUp delay-09s">
-        <%= image_tag("#") %>
-    </div>
-    <h3 class="text-center orange animated fadeInUp delay-09s">Our Mission</h3>
-    <div class="row animated fadeInUp delay-03s">
-        <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
-            <br>
-            <div>
-                <p>content todo</p>
-            </div>            
-            <div class="text-center">
-                <%= link_to "Let's Work Together", contact_us_path, class: "btn btn-default btn-lg" %>
-            </div>            
+<section class="text-left animated fadeInUp delay-09s">
+    <div class="container ">
+        <div class="text-center animated fadeInUp delay-09s">
+            <%= image_tag("#") %>
         </div>
-    </div><!-- end .row -->
+        <h3 class="text-center orange animated fadeInUp delay-09s">Our Mission</h3>
+        <div class="row animated fadeInUp delay-03s">
+            <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+                <br>
+                <div>
+                    <p>content todo</p>
+                </div>            
+                <div class="text-center">
+                    <%= link_to "Let's Work Together", contact_us_path, class: "btn btn-default btn-lg" %>
+                </div>            
+            </div>
+        </div><!-- end .row -->
+    </div><!-- end container -->
 </section><!-- end #center-main-section -->
 
 
